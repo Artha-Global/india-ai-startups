@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>India AI Startup Policy Explorer — Artha Global 2026</title>
+<meta property="og:type" content="website">
+<meta property="og:title" content="India AI Startup Policy Explorer — Artha Global 2026">
+<meta property="og:description" content="45 policy recommendations for scaling AI startups in India, prioritised by domestic control x urgency. Explore, filter, and export by domain and actor.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="India AI Startup Policy Explorer — Artha Global 2026">
+<meta name="twitter:description" content="45 policy recommendations for scaling AI startups in India — prioritised by domestic control x urgency.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300..700&family=DM+Serif+Display&display=swap" rel="stylesheet">
+<style>
+:root{--fd:"DM Serif Display",Georgia,serif;--fb:"DM Sans","Helvetica Neue",sans-serif;--xs:clamp(.75rem,.7rem + .25vw,.875rem);--sm:clamp(.875rem,.8rem + .35vw,1rem);--base:clamp(1rem,.95rem + .25vw,1.125rem);--lg:clamp(1.125rem,1rem + .75vw,1.5rem);--xl:clamp(1.5rem,1.2rem + 1.25vw,2.25rem);--s1:.25rem;--s2:.5rem;--s3:.75rem;--s4:1rem;--s5:1.25rem;--s6:1.5rem;--s8:2rem;--s10:2.5rem;--s12:3rem;--s16:4rem;--rm:.375rem;--rmd:.5rem;--rl:.75rem;--rxl:1rem;--rfull:9999px;--ease:180ms cubic-bezier(.16,1,.3,1);--espring:300ms cubic-bezier(.16,1,.3,1)}
+:root,[data-theme=light]{--bg:#f7f6f2;--sur:#fafaf7;--s2:#fff;--off:#f0ede8;--off2:#e8e4de;--brd:rgba(34,32,26,.1);--div:rgba(34,32,26,.07);--tx:#22201a;--mu:#6b6860;--fn:#b0ada7;--inv:#f7f6f2;--pri:#b5291c;--nbg:#fdf2f1;--nbd:#f5c4be;--now:#b5291c;--bld:#8a6200;--bbg:#fdf8ee;--bbd:#e8d49a;--mon:#4a5568;--mbg:#f4f5f7;--mbd:#c8cdd6;--ta:#01696f;--tab:#eef6f6;--tad:#b3d9db;--mk:#5a3f9e;--mkb:#f3eff9;--mkd:#c4b4e8;--fi:#8a6200;--fib:#fdf8ee;--fid:#e8d49a;--po:#1a5c96;--pob:#edf3fb;--pod:#b3ccec;--in:#4a5568;--inb:#f4f5f7;--ind:#c8cdd6;--shsm:0 1px 3px rgba(0,0,0,.06);--shmd:0 4px 16px rgba(0,0,0,.08);--shlg:0 16px 48px rgba(0,0,0,.12)}
+[data-theme=dark]{--bg:#181715;--sur:#1e1d1b;--s2:#252422;--off:#1b1a18;--off2:#232220;--brd:rgba(255,255,255,.09);--div:rgba(255,255,255,.06);--tx:#d4d1cb;--mu:#7d7a72;--fn:#504e49;--inv:#22201a;--pri:#e06a5c;--nbg:#2a1c1a;--nbd:#5e2f28;--now:#e06a5c;--bld:#c9970a;--bbg:#221d0e;--bbd:#5a4500;--mon:#8a9ab0;--mbg:#1c1e22;--mbd:#3a404c;--ta:#3db8be;--tab:#0e1f20;--tad:#1e4547;--mk:#9b7ee0;--mkb:#1a1628;--mkd:#3a2e5a;--fi:#c9970a;--fib:#221d0e;--fid:#5a4500;--po:#5b9fd8;--pob:#101c2a;--pod:#1e3a58;--in:#8a9ab0;--inb:#1c1e22;--ind:#3a404c;--shsm:0 1px 3px rgba(0,0,0,.3);--shmd:0 4px 16px rgba(0,0,0,.4);--shlg:0 16px 48px rgba(0,0,0,.55)}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;scroll-behavior:smooth;scroll-padding-top:60px}
+body{min-height:100dvh;font-family:var(--fb);font-size:var(--sm);color:var(--tx);background:var(--bg);line-height:1.6;overflow-x:hidden}
+img,svg{display:block} button{cursor:pointer;border:none;background:none;font:inherit;color:inherit} ul{list-style:none}
+:focus-visible{outline:2px solid var(--pri);outline-offset:3px;border-radius:var(--rm)}
+@media(prefers-reduced-motion:reduce){*{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+
+/* TOP */
+.top{position:sticky;top:0;z-index:100;background:color-mix(in oklab,var(--sur) 95%,transparent);backdrop-filter:blur(12px);border-bottom:1px solid var(--brd);padding:var(--s3) var(--s6);display:flex;align-items:center;gap:var(--s4)}
+.logo{width:28px;height:28px;flex-shrink:0}
+.btxt{display:flex;flex-direction:column}
+.btitle{font-family:var(--fd);font-size:var(--sm);line-height:1.1}
+.bsub{font-size:10px;color:var(--mu)}
+.spacer{flex:1}
+.top-act{display:flex;align-items:center;gap:var(--s2)}
+.nav-tabs{display:flex;gap:0;background:var(--off);border-radius:var(--rfull);padding:3px;margin-left:var(--s2)}
+.ntab{padding:4px var(--s4);border-radius:var(--rfull);font-size:var(--xs);font-weight:500;color:var(--mu);transition:all var(--ease)}
+.ntab.on{background:var(--s2);color:var(--tx);box-shadow:var(--shsm)}
+.ibtn{width:34px;height:34px;display:flex;align-items:center;justify-content:center;border-radius:var(--rmd);color:var(--mu);transition:background var(--ease),color var(--ease)}
+.ibtn:hover{background:var(--off);color:var(--tx)}
+.sbtn{display:flex;align-items:center;gap:var(--s2);padding:0 var(--s3);height:34px;border-radius:var(--rmd);background:var(--pri);color:#fff;font-size:var(--xs);font-weight:600;transition:opacity var(--ease)}
+.sbtn:hover{opacity:.85}
+@media(max-width:640px){.bsub,.nav-tabs{display:none}}
+
+/* LAYOUT */
+.layout{display:grid;grid-template-columns:252px 1fr;min-height:calc(100dvh - 56px)}
+@media(max-width:860px){.layout{grid-template-columns:1fr}}
+.sidebar{background:var(--sur);border-right:1px solid var(--brd);padding:var(--s5) var(--s4);overflow-y:auto;position:sticky;top:56px;max-height:calc(100dvh - 56px)}
+@media(max-width:860px){.sidebar{position:static;max-height:none;border-right:none;border-bottom:1px solid var(--brd);padding:var(--s4)}}
+.sbs{margin-bottom:var(--s5)}
+.sbl{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--fn);margin-bottom:var(--s3);padding-bottom:var(--s2);border-bottom:1px solid var(--div)}
+.fpg{display:flex;flex-direction:column;gap:var(--s2)}
+@media(max-width:860px){.fpg{flex-direction:row;flex-wrap:wrap}}
+.fp{display:flex;align-items:center;gap:var(--s2);padding:6px var(--s3);border-radius:var(--rfull);font-size:var(--xs);font-weight:500;border:1px solid var(--brd);background:var(--s2);color:var(--mu);transition:all var(--ease);white-space:nowrap}
+.fp:hover{border-color:var(--mu);color:var(--tx)} .fp.on{color:#fff}
+.fpdot{width:7px;height:7px;border-radius:50%;flex-shrink:0}
+.fp-now.on{background:var(--now);border-color:var(--now)}
+.fp-bld.on{background:var(--bld);border-color:var(--bld)}
+.fp-mon.on{background:var(--mon);border-color:var(--mon)}
+.fp-ta.on{background:var(--ta);border-color:var(--ta)}
+.fp-mk.on{background:var(--mk);border-color:var(--mk)}
+.fp-fi.on{background:var(--fi);border-color:var(--fi)}
+.fp-po.on{background:var(--po);border-color:var(--po)}
+.fp-in.on{background:var(--in);border-color:var(--in)}
+.fp-ac.on{background:var(--tx);border-color:var(--tx)}
+.rst{font-size:var(--xs);color:var(--pri);text-decoration:underline;text-underline-offset:2px;margin-top:var(--s3);padding:0}
+.rst:hover{opacity:.7}
+.sbnote{font-size:var(--xs);color:var(--mu);line-height:1.75;margin-top:var(--s5);padding:var(--s3);background:var(--off);border-radius:var(--rmd);border-left:3px solid var(--pri)}
+
+/* MAIN */
+.main{padding:var(--s6);overflow-y:auto;min-width:0}
+.view{display:none} .view.on{display:block}
+
+/* EXPLORER */
+.intro{background:var(--s2);border:1px solid var(--brd);border-left:4px solid var(--pri);border-radius:var(--rl);padding:var(--s5) var(--s6);margin-bottom:var(--s6);box-shadow:var(--shsm)}
+.intro h2{font-family:var(--fd);font-size:var(--lg);margin-bottom:var(--s2);line-height:1.25}
+.intro p{font-size:var(--xs);color:var(--mu);max-width:72ch;line-height:1.8}
+.legend{display:flex;flex-wrap:wrap;gap:var(--s4);margin-top:var(--s4)}
+.li{display:flex;align-items:center;gap:var(--s2);font-size:var(--xs);color:var(--mu)}
+.ld{width:9px;height:9px;border-radius:50%;flex-shrink:0}
+.qw{display:flex;align-items:center;gap:var(--s3);padding:var(--s3) var(--s4);background:var(--nbg);border:1px solid var(--nbd);border-radius:var(--rl);margin-bottom:var(--s5);cursor:pointer;user-select:none;transition:opacity var(--ease)}
+.qw:hover{opacity:.85}
+.qwdot{width:9px;height:9px;background:var(--now);border-radius:50%;flex-shrink:0}
+.qwtxt{font-size:var(--xs);font-weight:600;color:var(--now);flex:1}
+.qwn{font-size:var(--xs);background:var(--now);color:#fff;border-radius:var(--rfull);padding:2px var(--s2);font-weight:700}
+.sw{width:34px;height:18px;background:var(--brd);border-radius:9px;position:relative;transition:background var(--ease);flex-shrink:0}
+.sw.on{background:var(--now)} .knob{position:absolute;top:2px;left:2px;width:14px;height:14px;background:#fff;border-radius:50%;transition:transform var(--ease);box-shadow:var(--shsm)} .sw.on .knob{transform:translateX(16px)}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:var(--s3);margin-bottom:var(--s6)}
+@media(max-width:600px){.stats{grid-template-columns:repeat(2,1fr)}}
+.stat{background:var(--s2);border:1px solid var(--brd);border-radius:var(--rl);padding:var(--s3) var(--s4);box-shadow:var(--shsm)}
+.stn{font-family:var(--fd);font-size:var(--xl);line-height:1;font-variant-numeric:tabular-nums}
+.sna{color:var(--tx)} .snn{color:var(--now)} .snb{color:var(--bld)} .snm{color:var(--mon)}
+.stl{font-size:var(--xs);color:var(--mu);margin-top:var(--s1)}
+.expbar{display:flex;align-items:center;gap:var(--s3);padding:var(--s3) var(--s4);background:var(--off);border:1px solid var(--brd);border-radius:var(--rl);margin-bottom:var(--s5)}
+.exptxt{font-size:var(--xs);color:var(--mu);flex:1}
+.expbtn{display:flex;align-items:center;gap:var(--s2);padding:5px var(--s3);border-radius:var(--rmd);font-size:var(--xs);font-weight:600;background:var(--s2);border:1px solid var(--brd);color:var(--tx);transition:all var(--ease)}
+.expbtn:hover{background:var(--off2);border-color:var(--mu)}
+.dsec{margin-bottom:var(--s8)}
+.sechd{display:flex;align-items:center;gap:var(--s3);margin-bottom:var(--s4);padding-bottom:var(--s3);border-bottom:1px solid var(--div)}
+.sechd h3{font-family:var(--fd);font-size:var(--lg)}
+.seccnt{font-size:var(--xs);background:var(--off);border-radius:var(--rfull);padding:2px var(--s2);color:var(--mu);font-weight:600}
+.dbar{width:4px;height:22px;border-radius:2px;flex-shrink:0}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(300px,100%),1fr));gap:var(--s4)}
+.card{background:var(--s2);border:1px solid var(--brd);border-radius:var(--rl);padding:var(--s4) var(--s5);box-shadow:var(--shsm);display:flex;flex-direction:column;gap:var(--s3);cursor:pointer;transition:box-shadow var(--ease),transform var(--ease),border-color var(--ease)}
+.card:hover{box-shadow:var(--shmd);transform:translateY(-1px)}
+.cardhd{display:flex;align-items:flex-start;gap:var(--s2)}
+.tb{flex-shrink:0;padding:3px var(--s2);border-radius:var(--rm);font-size:10px;font-weight:700;letter-spacing:.04em;white-space:nowrap;line-height:1.4}
+.bn{background:var(--nbg);color:var(--now);border:1px solid var(--nbd)}
+.bb{background:var(--bbg);color:var(--bld);border:1px solid var(--bbd)}
+.bm{background:var(--mbg);color:var(--mon);border:1px solid var(--mbd)}
+.ctitle{font-weight:600;font-size:var(--sm);line-height:1.4;flex:1}
+.cbody{font-size:var(--xs);color:var(--mu);line-height:1.65}
+.cfoot{display:flex;flex-wrap:wrap;align-items:center;gap:var(--s2);margin-top:auto;padding-top:var(--s3);border-top:1px solid var(--div)}
+.dtag{font-size:var(--xs);padding:2px var(--s2);border-radius:var(--rfull);font-weight:500}
+.d-talent{background:var(--tab);color:var(--ta);border:1px solid var(--tad)}
+.d-market{background:var(--mkb);color:var(--mk);border:1px solid var(--mkd)}
+.d-financing{background:var(--fib);color:var(--fi);border:1px solid var(--fid)}
+.d-policy{background:var(--pob);color:var(--po);border:1px solid var(--pod)}
+.d-infra{background:var(--inb);color:var(--in);border:1px solid var(--ind)}
+.atag{font-size:var(--xs);color:var(--fn);border:1px solid var(--brd);border-radius:var(--rfull);padding:2px var(--s2)}
+.htag{font-size:var(--xs);color:var(--fn);margin-left:auto}
+.empty{display:flex;flex-direction:column;align-items:center;text-align:center;padding:var(--s16) var(--s8);color:var(--mu)}
+.eico{width:48px;height:48px;color:var(--fn);margin-bottom:var(--s4)}
+.empty h3{color:var(--tx);font-family:var(--fd);font-size:var(--lg);margin-bottom:var(--s2)}
+.empty p{font-size:var(--sm);max-width:36ch;color:var(--mu)}
+.empty button{margin-top:var(--s4);font-size:var(--xs);color:var(--pri);text-decoration:underline;text-underline-offset:2px}
+
+/* NARRATIVE */
+.narhero{margin-bottom:var(--s8)}
+.narhero h2{font-family:var(--fd);font-size:var(--xl);line-height:1.2;margin-bottom:var(--s3);max-width:20ch}
+.narhero p{font-size:var(--sm);color:var(--mu);max-width:60ch;line-height:1.8}
+.clgrid{display:grid;grid-template-columns:1fr auto 1fr auto 1fr;align-items:center;gap:var(--s4);margin-bottom:var(--s8)}
+@media(max-width:700px){.clgrid{grid-template-columns:1fr;gap:var(--s3)}.clarrow{display:none}}
+.clpillar{background:var(--s2);border:1px solid var(--brd);border-radius:var(--rxl);padding:var(--s5);text-align:center;box-shadow:var(--shsm)}
+.clicon{font-size:2rem;margin-bottom:var(--s2);display:block}
+.cltitle{font-family:var(--fd);font-size:var(--base);margin-bottom:var(--s1)}
+.clsub{font-size:var(--xs);color:var(--mu);line-height:1.6}
+.clcount{display:inline-block;margin-top:var(--s2);padding:3px var(--s3);border-radius:var(--rfull);font-size:var(--xs);font-weight:700;color:#fff}
+.clarrow{color:var(--fn);font-size:1.5rem;text-align:center}
+.tlsec{margin-bottom:var(--s8)}
+.tlhd{display:flex;align-items:center;gap:var(--s3);margin-bottom:var(--s4)}
+.tlphase{padding:var(--s2) var(--s4);border-radius:var(--rfull);font-size:var(--xs);font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:#fff}
+.phnow{background:var(--now)} .phbld{background:var(--bld)} .phmon{background:var(--mon)}
+.tlhdesc{font-size:var(--xs);color:var(--mu)}
+.tldblk{margin-bottom:var(--s5)}
+.tldlbl{display:flex;align-items:center;gap:var(--s2);font-size:var(--xs);font-weight:700;color:var(--mu);margin-bottom:var(--s3);text-transform:uppercase;letter-spacing:.06em}
+.tlddot{width:8px;height:8px;border-radius:50%}
+.tlitems{display:flex;flex-direction:column;gap:var(--s2);padding-left:var(--s5);border-left:2px solid var(--div)}
+.tlitem{font-size:var(--xs);color:var(--tx);padding:var(--s2) var(--s3);background:var(--s2);border:1px solid var(--brd);border-radius:var(--rmd);cursor:pointer;transition:all var(--ease);line-height:1.5}
+.tlitem:hover{border-color:var(--mu);box-shadow:var(--shsm)}
+.mxwrap{margin-bottom:var(--s8)}
+.mxtitle{font-family:var(--fd);font-size:var(--lg);margin-bottom:var(--s4)}
+.mx{display:grid;grid-template-columns:auto 1fr 1fr;gap:var(--s3)}
+.mxlabel{font-size:var(--xs);font-weight:700;color:var(--mu);writing-mode:vertical-lr;transform:rotate(180deg);text-align:center;padding:var(--s2) 0;white-space:nowrap}
+.mxhd{font-size:var(--xs);font-weight:700;color:var(--mu);text-align:center;padding:var(--s2);background:var(--off);border-radius:var(--rmd)}
+.mxcell{background:var(--s2);border:1px solid var(--brd);border-radius:var(--rl);padding:var(--s4);min-height:120px}
+.mxbadge{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;margin-bottom:var(--s3)}
+.mxitems{display:flex;flex-direction:column;gap:var(--s1)}
+.mxitem{font-size:var(--xs);color:var(--mu);cursor:pointer;padding:var(--s1) var(--s2);border-radius:var(--rm);transition:background var(--ease)}
+.mxitem:hover{background:var(--off);color:var(--tx)}
+.mxitem::before{content:"\2192  ";color:var(--pri)}
+
+/* DRAWER */
+.ov{position:fixed;inset:0;background:rgba(0,0,0,.45);z-index:200;opacity:0;pointer-events:none;transition:opacity var(--espring)}
+.ov.open{opacity:1;pointer-events:all}
+.drw{position:fixed;top:0;right:0;width:min(520px,100vw);height:100dvh;background:var(--s2);border-left:1px solid var(--brd);box-shadow:var(--shlg);z-index:201;transform:translateX(100%);transition:transform var(--espring);display:flex;flex-direction:column;overflow:hidden}
+.drw.open{transform:translateX(0)}
+.drwhd{padding:var(--s5) var(--s6);border-bottom:1px solid var(--div);display:flex;align-items:flex-start;gap:var(--s4);flex-shrink:0}
+.drwhdi{flex:1;min-width:0}
+.drwcls{width:30px;height:30px;display:flex;align-items:center;justify-content:center;border-radius:var(--rmd);color:var(--mu);flex-shrink:0;transition:background var(--ease)}
+.drwcls:hover{background:var(--off)}
+.drwtitle{font-family:var(--fd);font-size:var(--lg);line-height:1.25;margin-top:var(--s2)}
+.drwtabs{display:flex;gap:0;background:var(--off);border-radius:var(--rfull);padding:3px;margin-top:var(--s3)}
+.dtab{padding:4px var(--s3);border-radius:var(--rfull);font-size:var(--xs);font-weight:500;color:var(--mu);transition:all var(--ease)}
+.dtab.on{background:var(--s2);color:var(--tx);box-shadow:var(--shsm)}
+.drwbody{flex:1;overflow-y:auto;padding:var(--s5) var(--s6)}
+.drwpane{display:none;flex-direction:column;gap:var(--s4)}
+.drwpane.on{display:flex}
+.drwdesc{font-size:var(--sm);color:var(--mu);line-height:1.85}
+.drwmeta{display:grid;grid-template-columns:1fr 1fr;gap:var(--s3)}
+.mi{background:var(--off);border-radius:var(--rmd);padding:var(--s3) var(--s4)}
+.mil{font-size:10px;color:var(--fn);text-transform:uppercase;letter-spacing:.08em;margin-bottom:var(--s1)}
+.miv{font-size:var(--xs);font-weight:600}
+.drwst{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--fn)}
+.implist,.evlist{display:flex;flex-direction:column;gap:var(--s2)}
+.impi{font-size:var(--xs);color:var(--mu);padding:var(--s2) var(--s3) var(--s2) var(--s5);position:relative;background:var(--off);border-radius:var(--rmd);line-height:1.6}
+.impi::before{content:"\2192";position:absolute;left:var(--s2);color:var(--pri);font-weight:700}
+.evi{font-size:var(--xs);color:var(--mu);padding:var(--s2) var(--s3) var(--s2) 2.25rem;position:relative;background:var(--off);border-radius:var(--rmd);line-height:1.6;border-left:3px solid var(--ta)}
+.evi::before{content:"\1F4CA";position:absolute;left:var(--s2);font-size:11px;top:var(--s2)}
+.evsrc{font-size:10px;color:var(--fn);margin-top:var(--s1)}
+
+/* TOAST */
+.toast{position:fixed;bottom:var(--s6);left:50%;transform:translateX(-50%) translateY(80px);background:var(--tx);color:var(--inv);font-size:var(--xs);padding:var(--s2) var(--s5);border-radius:var(--rfull);box-shadow:var(--shlg);z-index:500;transition:transform var(--espring),opacity var(--espring);opacity:0;pointer-events:none;white-space:nowrap}
+.toast.show{transform:translateX(-50%) translateY(0);opacity:1}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <svg class="logo" viewBox="0 0 28 28" fill="none">
+    <rect width="28" height="28" rx="6" fill="var(--pri)" fill-opacity=".12"/>
+    <path d="M6 21L14 7L22 21" stroke="var(--pri)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M9.5 16.5H18.5" stroke="var(--pri)" stroke-width="2" stroke-linecap="round"/>
+  </svg>
+  <div class="btxt">
+    <span class="btitle">India AI Startup Policy Explorer</span>
+    <span class="bsub">Artha Global &middot; April 2026</span>
+  </div>
+  <div class="nav-tabs" role="tablist">
+    <button class="ntab on" id="tab-explorer" role="tab" aria-selected="true">Explorer</button>
+    <button class="ntab" id="tab-narrative" role="tab" aria-selected="false">Narrative</button>
+  </div>
+  <div class="spacer"></div>
+  <div class="top-act">
+    <button class="ibtn" id="theme-btn" aria-label="Toggle dark mode">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+    </button>
+    <button class="sbtn" id="share-btn">
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="m8.59 13.51 6.83 3.98M15.41 6.51l-6.82 3.98"/></svg>
+      Share
+    </button>
+  </div>
+</header>
+
+<div class="layout">
+  <aside class="sidebar" id="sidebar">
+    <div class="sbs">
+      <div class="sbl">Priority Tier</div>
+      <div class="fpg">
+        <button class="fp fp-now" data-f="tier" data-v="now"><span class="fpdot" style="background:var(--now)"></span>&#128308; Act Now</button>
+        <button class="fp fp-bld" data-f="tier" data-v="build"><span class="fpdot" style="background:var(--bld)"></span>&#128257; Build Toward</button>
+        <button class="fp fp-mon" data-f="tier" data-v="monitor"><span class="fpdot" style="background:var(--mon)"></span>&#9898; Monitor</button>
+      </div>
+    </div>
+    <div class="sbs">
+      <div class="sbl">Domain</div>
+      <div class="fpg">
+        <button class="fp fp-ta" data-f="domain" data-v="talent"><span class="fpdot" style="background:var(--ta)"></span>Talent &amp; R&amp;D</button>
+        <button class="fp fp-mk" data-f="domain" data-v="market"><span class="fpdot" style="background:var(--mk)"></span>Market Innovation</button>
+        <button class="fp fp-fi" data-f="domain" data-v="financing"><span class="fpdot" style="background:var(--fi)"></span>Financing</button>
+        <button class="fp fp-po" data-f="domain" data-v="policy"><span class="fpdot" style="background:var(--po)"></span>Policy &amp; Regulation</button>
+        <button class="fp fp-in" data-f="domain" data-v="infra"><span class="fpdot" style="background:var(--in)"></span>Infrastructure &amp; GPU</button>
+      </div>
+    </div>
+    <div class="sbs">
+      <div class="sbl">Who Acts</div>
+      <div class="fpg">
+        <button class="fp fp-ac" data-f="actor" data-v="national">Central Government</button>
+        <button class="fp fp-ac" data-f="actor" data-v="ecosystem">Startup Ecosystem</button>
+        <button class="fp fp-ac" data-f="actor" data-v="vc">VC / Investors</button>
+        <button class="fp fp-ac" data-f="actor" data-v="academia">Academia</button>
+      </div>
+    </div>
+    <button class="rst" id="rst">Reset all filters</button>
+    <p class="sbnote">Prioritised by <strong>domestic control &times; urgency</strong>. Talent &amp; Market lead because India has full policy agency here. GPU/compute is deliberately de-emphasised &mdash; supply is globally constrained.</p>
+  </aside>
+
+  <main class="main">
+    <div class="view on" id="view-explorer">
+      <div class="intro">
+        <h2>India&#8217;s AI future is built on people, markets &amp; ideas &#8212; not chips.</h2>
+        <p>45 policy recommendations from the Artha Global April 2026 study, re-ordered by <em>domestic control &times; urgency</em>. Talent &amp; Market levers are India&#8217;s to pull today. Financing is a medium-term parallel track. GPU/compute is deliberately de-emphasised &mdash; supply is globally constrained.</p>
+        <div class="legend">
+          <div class="li"><div class="ld" style="background:var(--now)"></div><span>Act Now &mdash; high domestic control, 0&ndash;3 yrs</span></div>
+          <div class="li"><div class="ld" style="background:var(--bld)"></div><span>Build Toward &mdash; structural reform, 3&ndash;7 yrs</span></div>
+          <div class="li"><div class="ld" style="background:var(--mon)"></div><span>Monitor &mdash; low domestic leverage</span></div>
+        </div>
+      </div>
+      <div class="qw" id="qw" role="button" tabindex="0" aria-pressed="false">
+        <div class="qwdot"></div>
+        <span class="qwtxt">Show only &#8220;Act Now&#8221; quick wins</span>
+        <span class="qwn" id="qwn">&#8212;</span>
+        <div class="sw" id="qwsw"><div class="knob"></div></div>
+      </div>
+      <div class="stats">
+        <div class="stat"><div class="stn sna" id="st-tot">&#8212;</div><div class="stl">Shown</div></div>
+        <div class="stat"><div class="stn snn" id="st-now">&#8212;</div><div class="stl">Act Now</div></div>
+        <div class="stat"><div class="stn snb" id="st-bld">&#8212;</div><div class="stl">Build Toward</div></div>
+        <div class="stat"><div class="stn snm" id="st-mon">&#8212;</div><div class="stl">Monitor</div></div>
+      </div>
+      <div class="expbar">
+        <span class="exptxt" id="expdesc">Export filtered recommendations</span>
+        <button class="expbtn" id="exp-copy">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+          Copy Markdown
+        </button>
+        <button class="expbtn" id="exp-csv">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Download CSV
+        </button>
+      </div>
+      <div id="recs"></div>
+    </div>
+
+    <div class="view" id="view-narrative">
+      <div class="narhero">
+        <h2>Three Levers, One Sequenced Bet</h2>
+        <p>The study's 45 recommendations collapse into a single strategic logic: India must concentrate political attention and budget on the levers it fully controls &mdash; talent pipelines and domestic market activation &mdash; while building financing architecture in parallel and accepting that GPU supply is a global constraint it cannot resolve unilaterally.</p>
+      </div>
+      <div class="clgrid" id="cl-grid"></div>
+      <div id="tl-sections"></div>
+      <div class="mxwrap">
+        <div class="mxtitle">Urgency &times; Domestic Control</div>
+        <div class="mx" id="matrix"></div>
+      </div>
+    </div>
+  </main>
+</div>
+
+<div class="ov" id="ov"></div>
+<div class="drw" id="drw" role="dialog" aria-modal="true">
+  <div class="drwhd">
+    <div class="drwhdi">
+      <div id="d-badge"></div>
+      <div id="d-title" class="drwtitle"></div>
+      <div class="drwtabs">
+        <button class="dtab on" data-pane="overview">Overview</button>
+        <button class="dtab" data-pane="evidence">Evidence</button>
+        <button class="dtab" data-pane="implications">If not acted</button>
+      </div>
+    </div>
+    <button class="drwcls" id="d-cls" aria-label="Close">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+    </button>
+  </div>
+  <div class="drwbody">
+    <div id="pane-overview" class="drwpane on">
+      <p id="d-desc" class="drwdesc"></p>
+      <div id="d-meta" class="drwmeta"></div>
+    </div>
+    <div id="pane-evidence" class="drwpane">
+      <div class="drwst">Supporting evidence from the study</div>
+      <div id="d-ev" class="evlist"></div>
+    </div>
+    <div id="pane-implications" class="drwpane">
+      <div class="drwst">If left unaddressed</div>
+      <div id="d-impl" class="implist"></div>
+    </div>
+  </div>
+</div>
+<div class="toast" id="toast"></div>
+
+<script>
+const DM={talent:{label:'Talent & R&D',color:'var(--ta)',cls:'d-talent'},market:{label:'Market Innovation',color:'var(--mk)',cls:'d-market'},financing:{label:'Financing',color:'var(--fi)',cls:'d-financing'},policy:{label:'Policy & Regulation',color:'var(--po)',cls:'d-policy'},infra:{label:'Infrastructure & GPU',color:'var(--in)',cls:'d-infra'}};
+const DO=['talent','market','financing','policy','infra'];
+const TL={now:'Act Now',build:'Build Toward',monitor:'Monitor'};
+const AM={national:'Central Govt',ecosystem:'Ecosystem',vc:'VC / Investors',academia:'Academia'};
+const CP=[{key:'talent',icon:'\u{1F9E0}',title:'Talent & R&D',sub:'India has full domestic agency over curriculum, fellowships, and university-startup pipelines.',tier:'now'},{key:'market',icon:'\u{1F3ED}',title:'Market Innovation',sub:'Government procurement design, vertical market activation, and demand-side programmes are fully controllable.',tier:'now'},{key:'financing',icon:'\u{1F4B0}',title:'Financing',sub:'Institutional capital reform and longer-duration VC structures are achievable but structurally slower.',tier:'build'}];
+let RECS=[],AF={tier:[],domain:[],actor:[]},qwOnly=false;
+
+fetch('recommendations.json').then(r=>r.json()).then(data=>{
+  RECS=data;
+  document.getElementById('qwn').textContent=RECS.filter(r=>r.tier==='now').length;
+  render(); buildNarrative();
+}).catch(()=>{
+  document.getElementById('recs').innerHTML='<div class="empty"><svg class="eico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg><h3>Could not load data</h3><p>Make sure recommendations.json is in the same folder.</p></div>';
+});
+
+function badge(t){return t==='now'?'<span class="tb bn">ACT NOW</span>':t==='build'?'<span class="tb bb">BUILD TOWARD</span>':'<span class="tb bm">MONITOR</span>';}
+function matches(r){if(qwOnly&&r.tier!=='now')return false;if(AF.tier.length&&!AF.tier.includes(r.tier))return false;if(AF.domain.length&&!AF.domain.includes(r.domain))return false;if(AF.actor.length&&!AF.actor.some(a=>r.actors.includes(a)))return false;return true;}
+
+function render(){
+  const vis=RECS.filter(matches);
+  document.getElementById('st-tot').textContent=vis.length;
+  document.getElementById('st-now').textContent=vis.filter(r=>r.tier==='now').length;
+  document.getElementById('st-bld').textContent=vis.filter(r=>r.tier==='build').length;
+  document.getElementById('st-mon').textContent=vis.filter(r=>r.tier==='monitor').length;
+  document.getElementById('expdesc').textContent=vis.length+' recommendation'+(vis.length===1?'':'s')+' in current view';
+  const c=document.getElementById('recs');
+  if(!vis.length){c.innerHTML='<div class="empty"><svg class="eico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg><h3>No recommendations match</h3><p>Try removing some filters.</p><button onclick="reset()">Reset all filters</button></div>';return;}
+  let h='';
+  for(const dom of DO){
+    const dr=vis.filter(r=>r.domain===dom);if(!dr.length)continue;const dm=DM[dom];
+    h+=`<div class="dsec"><div class="sechd"><div class="dbar" style="background:${dm.color}"></div><h3>${dm.label}</h3><span class="seccnt">${dr.length}</span></div><div class="grid">`;
+    for(const r of dr){
+      const acts=r.actors.slice(0,2).map(a=>`<span class="atag">${AM[a]||a}</span>`).join('');
+      const sd=r.desc.length>145?r.desc.substring(0,142)+'&#8230;':r.desc;
+      h+=`<div class="card" data-id="${r.id}" tabindex="0" role="button"><div class="cardhd">${badge(r.tier)}<div class="ctitle">${r.title}</div></div><div class="cbody">${sd}</div><div class="cfoot"><span class="dtag ${dm.cls}">${dm.label}</span>${acts}<span class="htag">${r.horizon}</span></div></div>`;
+    }
+    h+='</div></div>';
+  }
+  c.innerHTML=h;
+  c.querySelectorAll('.card').forEach(el=>{const go=()=>openDrawer(el.dataset.id);el.addEventListener('click',go);el.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();go();}});});
+}
+
+function openDrawer(id){
+  const r=RECS.find(x=>x.id===id);if(!r)return;const dm=DM[r.domain];
+  document.getElementById('d-badge').innerHTML=badge(r.tier);
+  document.getElementById('d-title').textContent=r.title;
+  document.getElementById('d-desc').textContent=r.desc;
+  document.getElementById('d-meta').innerHTML=`<div class="mi"><div class="mil">Domain</div><div class="miv" style="color:${dm.color}">${dm.label}</div></div><div class="mi"><div class="mil">Priority</div><div class="miv">${TL[r.tier]||r.tier}</div></div><div class="mi"><div class="mil">Time Horizon</div><div class="miv">${r.horizon}</div></div><div class="mi"><div class="mil">Who Acts</div><div class="miv">${r.actors.map(a=>AM[a]||a).join(', ')}</div></div>`;
+  document.getElementById('d-ev').innerHTML=(r.evidence||[]).map(e=>`<div class="evi">${e}<div class="evsrc">Artha Global study, Apr 2026</div></div>`).join('')||'<p style="color:var(--fn);font-size:var(--xs)">No evidence data attached.</p>';
+  document.getElementById('d-impl').innerHTML=(r.implications||[]).map(i=>`<div class="impi">${i}</div>`).join('');
+  document.querySelectorAll('.dtab').forEach(t=>t.classList.remove('on'));
+  document.querySelectorAll('.drwpane').forEach(p=>p.classList.remove('on'));
+  document.querySelector('.dtab[data-pane="overview"]').classList.add('on');
+  document.getElementById('pane-overview').classList.add('on');
+  document.getElementById('drw').classList.add('open');
+  document.getElementById('ov').classList.add('open');
+}
+function closeDrawer(){document.getElementById('drw').classList.remove('open');document.getElementById('ov').classList.remove('open');}
+document.querySelectorAll('.dtab').forEach(t=>t.addEventListener('click',()=>{const p=t.dataset.pane;document.querySelectorAll('.dtab').forEach(x=>x.classList.remove('on'));document.querySelectorAll('.drwpane').forEach(x=>x.classList.remove('on'));t.classList.add('on');document.getElementById('pane-'+p).classList.add('on');}));
+document.getElementById('d-cls').addEventListener('click',closeDrawer);
+document.getElementById('ov').addEventListener('click',closeDrawer);
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeDrawer();});
+
+function reset(){AF={tier:[],domain:[],actor:[]};qwOnly=false;document.querySelectorAll('.fp').forEach(p=>p.classList.remove('on'));document.getElementById('qwsw').classList.remove('on');render();}
+document.getElementById('rst').addEventListener('click',reset);
+document.querySelectorAll('.fp').forEach(btn=>btn.addEventListener('click',()=>{const f=btn.dataset.f,v=btn.dataset.v,a=AF[f],i=a.indexOf(v);if(i>-1){a.splice(i,1);btn.classList.remove('on');}else{a.push(v);btn.classList.add('on');}render();}));
+
+const qwEl=document.getElementById('qw'),qwSw=document.getElementById('qwsw');
+function toggleQW(){qwOnly=!qwOnly;qwSw.classList.toggle('on',qwOnly);qwEl.setAttribute('aria-pressed',String(qwOnly));render();}
+qwEl.addEventListener('click',toggleQW);
+qwEl.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();toggleQW();}});
+
+const sidebar=document.getElementById('sidebar');
+document.querySelectorAll('[id^="tab-"]').forEach(tab=>{tab.addEventListener('click',()=>{const vid='view-'+tab.id.replace('tab-','');document.querySelectorAll('[id^="tab-"]').forEach(t=>{t.classList.remove('on');t.setAttribute('aria-selected','false');});document.querySelectorAll('.view').forEach(v=>v.classList.remove('on'));tab.classList.add('on');tab.setAttribute('aria-selected','true');document.getElementById(vid).classList.add('on');sidebar.style.display=vid==='view-narrative'?'none':'';});});
+
+function buildNarrative(){
+  const clEl=document.getElementById('cl-grid');
+  let ch='';
+  CP.forEach((p,i)=>{
+    const cnt=RECS.filter(r=>r.domain===p.key).length;
+    const tc=p.tier==='now'?'var(--now)':'var(--bld)';
+    const dm=DM[p.key];
+    ch+=`<div class="clpillar"><span class="clicon">${p.icon}</span><div class="cltitle">${p.title}</div><div class="clsub">${p.sub}</div><span class="clcount" style="background:${tc}">${cnt} recs</span></div>`;
+    if(i<CP.length-1)ch+='<div class="clarrow">&#8594;</div>';
+  });
+  clEl.innerHTML=ch;
+
+  const phases=[{tier:'now',label:'Act Now',desc:'High domestic control. 0–3 year interventions.',phc:'phnow'},{tier:'build',label:'Build Toward',desc:'Structural reform. 3–7 year horizon.',phc:'phbld'},{tier:'monitor',label:'Monitor',desc:'Low domestic leverage. Watch and optimise.',phc:'phmon'}];
+  let th='';
+  phases.forEach(ph=>{
+    const pr=RECS.filter(r=>r.tier===ph.tier);if(!pr.length)return;
+    th+=`<div class="tlsec"><div class="tlhd"><span class="tlphase ${ph.phc}">${ph.label}</span><span class="tlhdesc">${ph.desc}</span></div>`;
+    DO.forEach(dom=>{const dr=pr.filter(r=>r.domain===dom);if(!dr.length)return;const dm=DM[dom];th+=`<div class="tldblk"><div class="tldlbl"><div class="tlddot" style="background:${dm.color}"></div>${dm.label}</div><div class="tlitems">`;dr.forEach(r=>{th+=`<div class="tlitem" data-id="${r.id}" tabindex="0" role="button">${r.title}</div>`;});th+='</div></div>';});
+    th+='</div>';
+  });
+  document.getElementById('tl-sections').innerHTML=th;
+  document.querySelectorAll('.tlitem').forEach(el=>{const go=()=>{openDrawer(el.dataset.id);switchExplorer();};el.addEventListener('click',go);el.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();go();}});});
+
+  const hd=['now','build'],cols=[['talent','market'],['financing','policy']];
+  let mh=`<div></div><div class="mxhd">High Domestic Control<br><small style="font-weight:400;color:var(--fn)">Talent &middot; Market</small></div><div class="mxhd">Medium Domestic Control<br><small style="font-weight:400;color:var(--fn)">Financing &middot; Policy</small></div><div class="mxlabel" style="grid-row:span 2">Urgency</div>`;
+  hd.forEach(tier=>cols.forEach(doms=>{
+    const rs=RECS.filter(r=>r.tier===tier&&doms.includes(r.domain));
+    const tc=tier==='now'?'var(--now)':'var(--bld)';
+    mh+=`<div class="mxcell"><div class="mxbadge" style="color:${tc}">${TL[tier]}</div><div class="mxitems">`;
+    rs.slice(0,5).forEach(r=>{mh+=`<div class="mxitem" data-id="${r.id}" tabindex="0" role="button">${r.title}</div>`;});
+    if(rs.length>5)mh+=`<div class="mxitem" style="color:var(--fn)">+${rs.length-5} more</div>`;
+    mh+='</div></div>';
+  }));
+  document.getElementById('matrix').innerHTML=mh;
+  document.querySelectorAll('.mxitem[data-id]').forEach(el=>{const go=()=>{openDrawer(el.dataset.id);switchExplorer();};el.addEventListener('click',go);el.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();go();}});});
+}
+function switchExplorer(){document.querySelectorAll('[id^="tab-"]').forEach(t=>{t.classList.remove('on');t.setAttribute('aria-selected','false');});document.querySelectorAll('.view').forEach(v=>v.classList.remove('on'));document.getElementById('tab-explorer').classList.add('on');document.getElementById('tab-explorer').setAttribute('aria-selected','true');document.getElementById('view-explorer').classList.add('on');sidebar.style.display='';}
+
+function getVisible(){return RECS.filter(matches);}
+document.getElementById('exp-copy').addEventListener('click',()=>{
+  const vis=getVisible();let md='# India AI Startup Policy Recommendations\n*Artha Global, April 2026*\n\n';
+  DO.forEach(dom=>{const dr=vis.filter(r=>r.domain===dom);if(!dr.length)return;md+=`## ${DM[dom].label}\n\n`;dr.forEach(r=>{md+=`### ${r.title}\n**Priority:** ${TL[r.tier]} | **Horizon:** ${r.horizon} | **Actors:** ${r.actors.map(a=>AM[a]||a).join(', ')}\n\n${r.desc}\n\n`;});});
+  navigator.clipboard.writeText(md).then(()=>showToast('Copied '+vis.length+' recommendations as Markdown \u2713'));
+});
+document.getElementById('exp-csv').addEventListener('click',()=>{
+  const vis=getVisible();const rows=[['ID','Domain','Priority','Title','Description','Actors','Horizon']];
+  vis.forEach(r=>rows.push([r.id,DM[r.domain].label,TL[r.tier]||r.tier,`"${r.title.replace(/"/g,'""')}"`,`"${r.desc.replace(/"/g,'""')}"`,r.actors.map(a=>AM[a]||a).join('; '),r.horizon]));
+  const csv=rows.map(r=>r.join(',')).join('\n');const a=document.createElement('a');a.href='data:text/csv;charset=utf-8,'+encodeURIComponent(csv);a.download='india-ai-recommendations.csv';a.click();
+  showToast('Downloaded '+vis.length+' recommendations as CSV \u2713');
+});
+
+document.getElementById('share-btn').addEventListener('click',()=>{
+  const url=window.location.href.split('#')[0];
+  if(navigator.share){navigator.share({title:'India AI Startup Policy Explorer',text:'45 policy recommendations for scaling AI startups in India',url}).catch(()=>copyUrl(url));}else{copyUrl(url);}
+});
+function copyUrl(url){navigator.clipboard.writeText(url).then(()=>showToast('Link copied to clipboard \u2713'));}
+
+let toastTimer;
+function showToast(msg){const t=document.getElementById('toast');t.textContent=msg;t.classList.add('show');clearTimeout(toastTimer);toastTimer=setTimeout(()=>t.classList.remove('show'),3000);}
+
+const tb=document.getElementById('theme-btn');let dark=window.matchMedia('(prefers-color-scheme:dark)').matches;
+document.documentElement.setAttribute('data-theme',dark?'dark':'light');
+tb.addEventListener('click',()=>{dark=!dark;document.documentElement.setAttribute('data-theme',dark?'dark':'light');tb.innerHTML=dark?'<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>':'<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>';});
+</script>
+</body>
+</html>

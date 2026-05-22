@@ -1,0 +1,759 @@
+[
+  {
+    "id": "t-1",
+    "domain": "talent",
+    "tier": "now",
+    "horizon": "0–2 years",
+    "title": "Advanced AI curriculum modernisation",
+    "desc": "Move IITs and NITs from awareness-level AI exposure to large-model systems engineering, AI safety, optimisation and benchmarking. This requires embedding live research problems inside coursework and creating faculty incentive structures that reward startup engagement over pure publication count.",
+    "actors": [
+      "national",
+      "academia"
+    ],
+    "evidence": [
+      "India faces structural shortages in advanced AI research and foundational model capabilities — projected demand of 2.3M AI roles by 2027 against a skilled supply of only 1.2M (Bain & Company, 2025).",
+      "KII respondents consistently cited curriculum misalignment as a key constraint, with graduates lacking higher-order skills requiring startups to invest heavily in upskilling.",
+      "Over 1.6 million candidates trained on FutureSkills Prime by late 2025, yet these focus on awareness and basic skills rather than frontier systems engineering."
+    ],
+    "implications": [
+      "Frontier researcher shortage deepens — India produces STEM graduates at scale but lacks principal investigators for foundational model development.",
+      "Skill formation pipeline weakens as automation erodes entry-level roles, limiting structured on-the-job learning pathways.",
+      "Top-tier AI researchers and founders accelerate relocation to ecosystems offering stronger research funding and compute access."
+    ]
+  },
+  {
+    "id": "t-2",
+    "domain": "talent",
+    "tier": "now",
+    "horizon": "0–3 years",
+    "title": "Startup–university residency pipelines",
+    "desc": "Create structured, multi-semester industry placements inside AI startups for final-year and postgraduate students. Unlike generic internships, residencies require startups to co-design learning outcomes, give residents access to live systems, and report outcomes to the sponsoring university.",
+    "actors": [
+      "academia",
+      "ecosystem"
+    ],
+    "evidence": [
+      "KIIs highlighted that despite large STEM talent pools, graduates lack applied systems and deployment capability needed in scaling AI startups.",
+      "The IndiaAI FutureSkills pillar addresses AI talent gap but focuses primarily on upskilling rather than applied deployment experience inside startups."
+    ],
+    "implications": [
+      "Without applied pipelines, India's STEM output continues to mismatch startup hiring needs — forcing expensive re-training or talent poaching from competitors.",
+      "Tier-II cities lose out disproportionately as residencies concentrate in Bengaluru, widening geographic inequality in AI capability."
+    ]
+  },
+  {
+    "id": "t-3",
+    "domain": "talent",
+    "tier": "now",
+    "horizon": "0–3 years",
+    "title": "National Frontier Talent Track — doctoral fellowships",
+    "desc": "Create competitive doctoral and postdoctoral AI fellowships directly aligned with IndiaAI compute infrastructure and mission-mode research priorities (health, climate, Indian language AI). Fellowships should carry guaranteed compute access, 5-year horizons, and co-supervisory links to both universities and AI startups.",
+    "actors": [
+      "national",
+      "academia"
+    ],
+    "evidence": [
+      "PM Research Chair scheme allocates ₹200 crore to attract 120 top AI scientists of Indian origin to IITs — but constraints in AI infrastructure deter participation.",
+      "India spends only 0.6–0.7% of GDP on R&D, significantly below China (2.4%), USA (3.5%) and Israel (5.4%)."
+    ],
+    "implications": [
+      "Frontier researcher shortage deepens without sustained fellowship pipelines, as individual chair schemes lack the density needed for national research capacity.",
+      "Dependence on imported foundational model capabilities increases as domestic research depth stays shallow."
+    ]
+  },
+  {
+    "id": "t-4",
+    "domain": "talent",
+    "tier": "now",
+    "horizon": "0–2 years",
+    "title": "Protected early-career research roles",
+    "desc": "Incentivise AI startups to maintain experimentation-heavy junior engineering roles even as AI tools automate routine coding. Tax credits or grant matching for startups that maintain structured junior researcher roles beyond minimum thresholds would prevent the hollowing out of the training pipeline.",
+    "actors": [
+      "national",
+      "ecosystem"
+    ],
+    "evidence": [
+      "KII respondents highlighted that automation is eroding entry-level positions, reducing on-the-job training pathways while simultaneously increasing demand for senior-level AI capabilities — creating a structural skills paradox."
+    ],
+    "implications": [
+      "Skill formation pipeline collapses as the junior-to-senior career ladder breaks, leaving India unable to develop mid-tier AI talent organically."
+    ]
+  },
+  {
+    "id": "t-5",
+    "domain": "talent",
+    "tier": "build",
+    "horizon": "3–5 years",
+    "title": "Scale PM Research Chair into full research platforms",
+    "desc": "Expand beyond individual PM Research Chairs to multi-year funded AI labs at IITs and IISc, each with dedicated compute, PhD cohorts and international collaboration mandates. Labs should have autonomous hiring authority and direct linkage to IndiaAI compute capacity.",
+    "actors": [
+      "national",
+      "academia"
+    ],
+    "evidence": [
+      "The PM Research Chair scheme aims to attract ~120 top AI scientists to IITs but remains constrained by weak infrastructure and limited institutional autonomy.",
+      "Global comparators (Stanford HAI, CMU AI, DeepMind Academic Partnerships) demonstrate that lab-level concentration of talent and compute yields disproportionate research output."
+    ],
+    "implications": [
+      "Limited foundational IP accumulation — without research platform density, India cannot develop proprietary model weights, datasets or research breakthroughs.",
+      "Widening global competitiveness gap as countries investing heavily in compute and AI research ecosystems extend their lead."
+    ]
+  },
+  {
+    "id": "t-6",
+    "domain": "talent",
+    "tier": "build",
+    "horizon": "3–7 years",
+    "title": "Tier-II applied AI innovation hubs",
+    "desc": "Establish applied AI research and startup collaboration centres in 5–7 Tier-II cities beyond Bengaluru and Hyderabad, co-located with existing technical universities. Hubs should include guaranteed compute access, resident startup cohorts, and dedicated industry liaison offices.",
+    "actors": [
+      "national",
+      "ecosystem",
+      "academia"
+    ],
+    "evidence": [
+      "Bengaluru alone accounts for over 30% of Indian AI startup headquarters, with its share growing from 17% (2008–2013) to over 37% (2022–2025), while all other regions saw a compounding -7% share reduction.",
+      "Geographic concentration creates talent monoculture risks and limits India's ability to develop regionally relevant AI applications."
+    ],
+    "implications": [
+      "Talent migration from Tier-II cities to Bengaluru intensifies, weakening regional AI capability and deepening geographic inequality.",
+      "India-specific differentiation weakens as regionally relevant use cases (vernacular languages, local agriculture, health contexts) remain under-explored."
+    ]
+  },
+  {
+    "id": "t-7",
+    "domain": "talent",
+    "tier": "build",
+    "horizon": "3–7 years",
+    "title": "Expand RDI architecture to TRL 0–3",
+    "desc": "The current ₹1 lakh crore RDI Scheme supports TRL 4+ ventures. Complement it with an explicit pre-commercial funding window for TRL 0–3 foundational AI research — covering basic model architectures, training methodology experimentation, and safety research that has no near-term commercial path.",
+    "actors": [
+      "national"
+    ],
+    "evidence": [
+      "Existing RDI funding is exclusively for TRL 4+ (prototype and beyond) ventures, leaving foundational AI experimentation with no structured public capital pathway.",
+      "Founders note that pre-training a large model can cost up to $100M, requiring multiple training-testing cycles — far beyond what current grant schemes support."
+    ],
+    "implications": [
+      "Deployment without creation — India becomes a large consumer of AI systems but does not control core model architectures.",
+      "Persistent deep-tech financing gap as venture capital remains hesitant to fund frontier AI without public research scaffolding."
+    ]
+  },
+  {
+    "id": "t-8",
+    "domain": "talent",
+    "tier": "build",
+    "horizon": "3–7 years",
+    "title": "Mission-mode sectoral AI research centres",
+    "desc": "Co-funded university–industry labs in health, climate, defence and Indian language AI. Each centre should have a defined applied research mandate, co-funding from both industry and government, and formal commercialisation pathways — not just publication targets.",
+    "actors": [
+      "national",
+      "academia",
+      "ecosystem"
+    ],
+    "evidence": [
+      "About 15% of AI startups surveyed believed government-created R&D centres offering mentorship and incubation for foundational model development could be significant support (India AI Mission report).",
+      "India's investment in high-risk, long-horizon AI research remains limited, with existing mechanisms favouring incremental innovation."
+    ],
+    "implications": [
+      "Without mission-mode centres, India's sectoral AI applications (agriculture, health, language) remain dependent on foreign foundational models not tailored to Indian contexts.",
+      "Limited foundational IP accumulation across strategic sectors weakens long-term strategic and economic leverage."
+    ]
+  },
+  {
+    "id": "m-1",
+    "domain": "market",
+    "tier": "now",
+    "horizon": "0–2 years",
+    "title": "Government as strategic anchor buyer",
+    "desc": "Leverage India's scale across Digital Health, Smart Cities, AgriStack and Defence Modernisation to create predictable, multi-year AI deployment pipelines with defined budget allocations. Anchor contracts must be structured to be bankable — i.e., usable as evidence for follow-on private capital raises.",
+    "actors": [
+      "national"
+    ],
+    "evidence": [
+      "Government and enterprise buyers frequently prefer pre-approved or established vendors, limiting startup experimentation and scale.",
+      "Venture capitalists cite firm exposure to government clients as a risk factor due to procurement delays — yet some of the biggest transformative contracts would emerge from government demand.",
+      "The MSME procurement mandate of 25% with sub-quotas for women and SC/ST entrepreneurs provides formal demand pathways but lacks AI-specific implementation."
+    ],
+    "implications": [
+      "Government demand remains fragmented — public spending fails to create stable revenue anchors or crowd in private capital at scale.",
+      "Indian firms remain peripheral vendors — startups supply backend services while platform-level value accrues to Big Tech incumbents."
+    ]
+  },
+  {
+    "id": "m-2",
+    "domain": "market",
+    "tier": "now",
+    "horizon": "0–2 years",
+    "title": "Shift from L1 to value-based government procurement",
+    "desc": "Reform the Lowest Bidder (L1) norm that systematically rewards cost over capability. Replace with multi-criteria evaluation combining lifecycle performance, innovation depth and technological differentiation. Build dedicated AI evaluation units inside at least 5 major ministries.",
+    "actors": [
+      "national"
+    ],
+    "evidence": [
+      "Open tendering and L1 norms prioritise scale over innovation, disadvantaging startups who cannot compete on pure cost but offer superior AI capability.",
+      "Limited institutional ability to assess AI solutions reinforces reliance on incumbents and weakens demand signals for startups.",
+      "Startup Runway 2.0 on GeM already relaxes prior experience and turnover requirements — but evaluation methodology remains unchanged."
+    ],
+    "implications": [
+      "Government demand remains under-leveraged — the state fails to act as a scale catalyst for domestic AI innovation.",
+      "Incumbent dominance deepens as scale-based procurement norms reinforce established players over innovation-driven firms."
+    ]
+  },
+  {
+    "id": "m-3",
+    "domain": "market",
+    "tier": "now",
+    "horizon": "0–2 years",
+    "title": "Enterprise–startup co-innovation platforms",
+    "desc": "Mandate large Indian PSUs and corporates to allocate defined innovation budgets (e.g., 1% of IT spend) to co-develop AI solutions with DPIIT-recognised startups. Create a formal co-development registry on GeM with standard IP protection terms pre-negotiated.",
+    "actors": [
+      "national",
+      "ecosystem"
+    ],
+    "evidence": [
+      "Large Indian enterprises often compete directly with startups rather than partnering — well-resourced internal IT teams reduce incentives to procure externally.",
+      "In the US ecosystem, large firms frequently rely on startups to bypass internal bureaucracy and pilot new technologies — a dynamic largely absent in India.",
+      "Nearly three-quarters of Indian AI startups serve businesses primarily, yet enterprise procurement cycles remain the key growth bottleneck."
+    ],
+    "implications": [
+      "Application-layer saturation persists — startups cluster around low-defensibility automation with limited pricing power.",
+      "Without enterprise co-development, India misses the feedback loop between scale deployment and model improvement."
+    ]
+  },
+  {
+    "id": "m-4",
+    "domain": "market",
+    "tier": "now",
+    "horizon": "1–3 years",
+    "title": "Demand aggregation through GeM and MSME mandates",
+    "desc": "Use the Government eMarketplace (GeM) digital procurement platform alongside MSME sub-quotas to create structured, volume-aggregated demand for AI startups. Build an AI product category on GeM with standardised evaluation rubrics to reduce procurement complexity.",
+    "actors": [
+      "national",
+      "ecosystem"
+    ],
+    "evidence": [
+      "Over 2 lakh startups recognised by DPIIT as of December 2025 can access GeM, but AI-specific procurement categories and evaluation standards remain absent.",
+      "Startup Runway 2.0 launched in 2023 aims to ease entry for startups but lacks product-category specificity for AI solutions."
+    ],
+    "implications": [
+      "Without structured demand aggregation, individual AI startups face prohibitive sales cycle costs relative to their runway, limiting growth to a handful of large-contract players."
+    ]
+  },
+  {
+    "id": "m-5",
+    "domain": "market",
+    "tier": "now",
+    "horizon": "0–3 years",
+    "title": "Support India-specific foundation models",
+    "desc": "Create targeted grants and compute subsidies for startups developing language- and sector-trained foundational models suited to India's demographic and regulatory context — 22+ official languages, public service workflows, and code-mixed digital usage.",
+    "actors": [
+      "national",
+      "ecosystem"
+    ],
+    "evidence": [
+      "AI Kosh (IndiaAI Mission) has onboarded 7,540 datasets and 273 AI models from 66 entities across 20 sectors as of February 2026, yet the ecosystem remains dominated by foreign foundational models.",
+      "Global AI innovation remains highly concentrated, with nearly three-quarters of venture funding going to the US — leaving India-specific model development chronically underfunded."
+    ],
+    "implications": [
+      "Indian firms remain dependent on foreign foundational models not trained on India-relevant data, weakening domestic innovation differentiation.",
+      "Missed scale-feedback advantage — without population-scale deployment of Indian models, local systems fail to benefit from real-world learning loops."
+    ]
+  },
+  {
+    "id": "m-6",
+    "domain": "market",
+    "tier": "now",
+    "horizon": "1–3 years",
+    "title": "Pilot-to-scale pathways for AI solutions",
+    "desc": "Institutionalise structured transition mechanisms from proof-of-concept to long-term government contracts, modelled on successful examples from IN-SPACe and BIRAC. Each pilot should come with a pre-defined scale trigger (performance metric, user threshold) that automatically triggers a scale decision within 6 months.",
+    "actors": [
+      "national",
+      "ecosystem"
+    ],
+    "evidence": [
+      "Startups historically discouraged from government tenders due to lengthy, complex procurement cycles and no structured path from pilot to full deployment.",
+      "Revenue visibility remains weak — absence of structured, large contracts limits startup bankability and follow-on capital access."
+    ],
+    "implications": [
+      "Deep-tech viability gap persists — foundational firms struggle to cross the transition from research to commercially sustainable deployment.",
+      "Unicorn pipeline constrained — limited anchor contracts restrict emergence of billion-dollar AI firms rooted in domestic demand."
+    ]
+  },
+  {
+    "id": "m-7",
+    "domain": "market",
+    "tier": "build",
+    "horizon": "3–7 years",
+    "title": "Targeted AI R&D tax credits",
+    "desc": "Extend research incentives to AI-intensive sectors including semiconductors, climate-tech, and defence-tech. Design credits to explicitly reward foundational research activity (compute spend on pre-training, researcher salaries, benchmark development) not just product commercialisation.",
+    "actors": [
+      "national"
+    ],
+    "evidence": [
+      "India's current R&D expenditure of 0.6–0.7% of GDP is far below global innovation leaders. Tax incentives are a cost-effective public investment to crowd in private R&D.",
+      "Existing funding mechanisms favour incremental or copycat innovation over foundational research; no sector-specific AI R&D incentive currently exists."
+    ],
+    "implications": [
+      "Weak deep-tech investability — investors avoid long-horizon AI ventures lacking defensible intellectual property if no public co-investment signals exist."
+    ]
+  },
+  {
+    "id": "m-8",
+    "domain": "market",
+    "tier": "build",
+    "horizon": "3–5 years",
+    "title": "India-specific AI benchmark infrastructure",
+    "desc": "Establish national evaluation frameworks reflecting Indian languages, culture, code-mix usage and public-service workflows. Benchmarks should be open, maintained by an independent body, and integrated into government procurement evaluation criteria.",
+    "actors": [
+      "national",
+      "academia"
+    ],
+    "evidence": [
+      "Weak AI standards and benchmarks make it hard for high-quality innovation to compete with low-fidelity wrapper products in procurement processes.",
+      "India-specific differentiation weakens without evaluation infrastructure recognising the difference between global models and India-optimised ones."
+    ],
+    "implications": [
+      "Market quality deteriorates — weak standards allow low-fidelity products to compete, crowding out credible innovators.",
+      "Global competitiveness weakens — Indian AI systems struggle to meet international compliance benchmarks, limiting export potential."
+    ]
+  },
+  {
+    "id": "m-9",
+    "domain": "market",
+    "tier": "build",
+    "horizon": "3–7 years",
+    "title": "Implement Digital Competition Bill",
+    "desc": "Enact the Draft Digital Competition Bill 2024 with specific provisions addressing gatekeeper dominance in cloud, platform distribution and AI infrastructure markets. Build CCI capacity to monitor anti-competitive bundling and data advantage accruing to Big Tech platforms.",
+    "actors": [
+      "national"
+    ],
+    "evidence": [
+      "The Competition Commission of India's 2025 Market Study identifies structural entry barriers — larger corporations train superior AI models using closed-source data, gaining market advantages over smaller startups.",
+      "Large technology firms enjoy structural advantages from long-term accumulation of proprietary datasets and infrastructure — acting as both competitors and critical upstream providers for startups."
+    ],
+    "implications": [
+      "Ecosystem concentration intensifies — market power consolidates among incumbents, limiting startup scaling pathways.",
+      "Domestic value capture weakens — strategic control of AI infrastructure consolidates outside India."
+    ]
+  },
+  {
+    "id": "m-10",
+    "domain": "market",
+    "tier": "build",
+    "horizon": "3–7 years",
+    "title": "Promote vertical AI specialisation",
+    "desc": "Actively incentivise startups building deep domain AI for health systems, agri-markets, logistics networks and financial inclusion — sectors where India has unique data advantages and where global incumbents have low incentive to specialise.",
+    "actors": [
+      "national",
+      "ecosystem",
+      "vc"
+    ],
+    "evidence": [
+      "Nearly 83% of Indian AI startups focus on the application layer, with many operating as model wrappers facing rapid replication by incumbents.",
+      "India's B2B AI orientation is strong (75% of startups), but product defensibility is eroding as generative tools lower technical barriers."
+    ],
+    "implications": [
+      "Application-layer saturation persists — startups cluster around low-defensibility automation.",
+      "Limited global differentiation — Indian firms struggle to compete internationally without domain-trained models."
+    ]
+  },
+  {
+    "id": "f-1",
+    "domain": "financing",
+    "tier": "build",
+    "horizon": "2–5 years",
+    "title": "Banking sector institutional capital reform",
+    "desc": "Enable insurance companies and pension funds — India's long-horizon capital pools — to invest defined proportions in deep-tech and AI-focused venture funds, similar to US endowments and retirement funds. SEBI and IRDAI rule changes required; start with a 1–3% calibrated exposure norm.",
+    "actors": [
+      "national"
+    ],
+    "evidence": [
+      "India lacks duration-matched patient capital — domestic investors apply short-term SaaS-style models seeking 3–5 year returns, incompatible with deep-tech AI gestation periods.",
+      "Unlike advanced economies where pension and insurance funds provide long-horizon capital to alternative assets, these institutional pools have yet to meaningfully anchor India's deep-tech financing landscape."
+    ],
+    "implications": [
+      "Capital allocation skews toward capital-light models — VC continues favouring SaaS and incremental automation over core AI innovation.",
+      "Foundational innovation remains underfunded — compute-heavy model-building ventures struggle to attract sufficient patient capital."
+    ]
+  },
+  {
+    "id": "f-2",
+    "domain": "financing",
+    "tier": "now",
+    "horizon": "0–2 years",
+    "title": "Faster capital deployment — FoF and IndiaAI",
+    "desc": "Accelerate IndiaAI startup financing and Fund-of-Funds disbursement timelines. As of December 2025, only ₹68 billion of the ₹100 billion FFS 1.0 corpus had been transferred to SIDBI for disbursal — and not fully passed on. Introduce quarterly public disbursement targets with accountability dashboards.",
+    "actors": [
+      "national"
+    ],
+    "evidence": [
+      "Since FFS 1.0 was established in 2016, only ₹68 billion of the allocated ₹100 billion has been transferred to SIDBI as of December 2025, with ₹3 billion still remaining to be transferred to AIFs.",
+      "Under FFS 2.0, the first ₹20 billion tranche had not yet been disbursed as of the study date, and Phase II guidelines remain unpublished.",
+      "Despite a substantial IndiaAI allocation, only ~40% of the FY2026 budget was utilised."
+    ],
+    "implications": [
+      "Early-stage startup runway erosion — uncertainty about disbursement timing forces founders to burn runway waiting for committed capital.",
+      "State demand fails to anchor markets — fragmented procurement prevents government from acting as a scale catalyst."
+    ]
+  },
+  {
+    "id": "f-3",
+    "domain": "financing",
+    "tier": "now",
+    "horizon": "0–2 years",
+    "title": "Transparent fund allocation dashboards",
+    "desc": "Require SIDBI, IndiaAI, and RDIF to publish quarterly fund utilisation dashboards showing: capital committed vs. deployed, sector and geography distribution, startup outcomes (revenue milestones, follow-on raises). SIDBI currently does not regularly disclose key performance indicators.",
+    "actors": [
+      "national"
+    ],
+    "evidence": [
+      "A transparency deficit persists — SIDBI does not regularly disclose key performance indicators, limiting independent evaluation of fund outcomes.",
+      "Capital deployment remains geographically and sectorally concentrated in Tier-I cities and familiar sectors without public accountability."
+    ],
+    "implications": [
+      "Investor confidence weakens — lack of performance visibility prevents domestic and international LPs from committing to India-focused deep-tech funds."
+    ]
+  },
+  {
+    "id": "f-4",
+    "domain": "financing",
+    "tier": "now",
+    "horizon": "0–2 years",
+    "title": "Simplified compliance pathways for deep-tech startups",
+    "desc": "Reduce reporting burdens for early-stage deep-tech AI firms accessing public capital. Introduce tiered compliance requirements by startup age and funding stage — a 12-month-old pre-revenue company should not face the same documentation burden as a Series B firm.",
+    "actors": [
+      "national"
+    ],
+    "evidence": [
+      "Founders highlight excessive compliance requirements of SIDBI Fund-of-Funds — startups are unable to secure the full committed amount due to inability to meet elaborate compliance requirements, leading to abrupt closure of smaller firms.",
+      "Fund-of-Funds have restrictive eligibility norms including startup age conditions, turnover thresholds and mandatory DPIIT recognition."
+    ],
+    "implications": [
+      "Deep-tech viability gap persists — foundational firms that survive early stages are still knocked out by administrative overhead rather than market failure."
+    ]
+  },
+  {
+    "id": "f-5",
+    "domain": "financing",
+    "tier": "build",
+    "horizon": "3–7 years",
+    "title": "Strengthen domestic exit pathways",
+    "desc": "Deepen IPO, secondary and domestic listing markets to retain innovation value within India. Create a dedicated SEBI-recognised AI Deep-Tech listing segment with relaxed profitability requirements for frontier AI firms — modelled on NASDAQ's early history or Israel's tech exchange.",
+    "actors": [
+      "national",
+      "vc"
+    ],
+    "evidence": [
+      "High-potential startups relocate to ecosystems offering deeper and longer-duration risk capital — a trend explicitly noted by Activate VC which aims to counter the brain drain of founders relocating to the US.",
+      "Without domestic exit pathways, India captures downstream deployment value while core IP and frontier capability consolidate abroad."
+    ],
+    "implications": [
+      "Founder and IP migration increases — high-potential startups relocate to ecosystems offering deeper risk capital.",
+      "Strategic value capture shifts outward — India captures deployment value while frontier capability consolidates abroad."
+    ]
+  },
+  {
+    "id": "f-6",
+    "domain": "financing",
+    "tier": "build",
+    "horizon": "3–7 years",
+    "title": "Encourage longer-tenure AI-focused venture funds",
+    "desc": "SEBI and SIDBI should create incentive structures (tax treatment, FFS eligibility) that reward fund structures with 10–15 year horizons over the current 7-year norm. Pilot with 2–3 dedicated AI deep-tech funds under FFS 2.0 with explicit long-horizon mandates.",
+    "actors": [
+      "national",
+      "vc"
+    ],
+    "evidence": [
+      "India's deep-tech ecosystem faces a structural deficit of duration-matched patient capital — domestic VCs apply short-term, SaaS-style funding models that prioritise faster-scaling opportunities and seek returns within 3–5 years.",
+      "Some VCs require large amounts of data for valuation, which nascent firms cannot provide — creating a chicken-and-egg dilemma for early-stage deep-tech financing."
+    ],
+    "implications": [
+      "Capital continues favouring SaaS and incremental automation over core AI innovation due to structural misalignment between fund duration and AI development cycles."
+    ]
+  },
+  {
+    "id": "f-7",
+    "domain": "financing",
+    "tier": "build",
+    "horizon": "3–5 years",
+    "title": "Layered capital architecture",
+    "desc": "Match financing instrument to risk profile: grants for pre-commercial TRL 0–3 research, equity instruments for scalable AI ventures, and hybrid or debt instruments for revenue-generating firms. This prevents the current situation where all stages compete for the same equity pool with incompatible return expectations.",
+    "actors": [
+      "national",
+      "vc"
+    ],
+    "evidence": [
+      "Currently, the RDI Scheme explicitly covers TRL 4+ ventures, while grants and equity schemes (iCreate, GENESIS, SISFS) are limited in scale — leaving a structural gap in TRL 0–3 foundational research funding.",
+      "The GPU-for-equity model is viewed by VCs as placing a burden on startups and complicating access to further funding."
+    ],
+    "implications": [
+      "Persistent deep-tech financing gap — foundational firms cannot access capital structured appropriately for their stage and risk profile."
+    ]
+  },
+  {
+    "id": "f-8",
+    "domain": "financing",
+    "tier": "build",
+    "horizon": "3–7 years",
+    "title": "Promote India-first AI investment theses",
+    "desc": "Work with VC associations (IVCA) to develop a formal India-first AI investment framework, incentivised through preferential FFS 2.0 allocation to funds that mandate a minimum 60% India-market-focused portfolio. Counter the structural bias toward globally oriented application-layer startups.",
+    "actors": [
+      "national",
+      "vc"
+    ],
+    "evidence": [
+      "Investors favour startups with access to international markets, particularly the US and Europe — resulting in bias toward application-layer solutions oriented toward global clients rather than India-focused use cases.",
+      "A gradual shift is visible: Peak XV, Lightspeed and Activate VC are increasingly backing India-first ventures — but this requires structural reinforcement, not just individual fund philosophy."
+    ],
+    "implications": [
+      "Without India-first investment incentives, domestic AI market development is underfunded relative to the scale of India's potential — limiting both local impact and global differentiation."
+    ]
+  },
+  {
+    "id": "p-1",
+    "domain": "policy",
+    "tier": "now",
+    "horizon": "0–2 years",
+    "title": "Single-window compliance portal",
+    "desc": "Centralise all AI-related regulatory filings — data protection, sector-specific AI approvals, grant documentation, procurement registration — into a single digital portal coordinated across MeitY, DPIIT, SEBI, and sectoral regulators. Target a maximum 15-day response SLA for all AI startup applications.",
+    "actors": [
+      "national"
+    ],
+    "evidence": [
+      "High compliance burden: government-linked funding and procurement impose disproportionate reporting and regulatory costs on early-stage firms.",
+      "Fragmented regulation across sectoral rules, unclear liability norms and cross-border data restrictions complicates startup scaling."
+    ],
+    "implications": [
+      "Operational efficiency declines — founder time and capital diverted toward regulatory navigation instead of product development.",
+      "Public-sector participation falls — startups avoid government contracts due to procedural and reporting friction."
+    ]
+  },
+  {
+    "id": "p-2",
+    "domain": "policy",
+    "tier": "now",
+    "horizon": "0–2 years",
+    "title": "Time-bound sandbox approvals",
+    "desc": "Introduce legally mandated, time-bound regulatory sandbox approvals (maximum 90 days) across health, finance and energy — the three highest-value AI deployment verticals. Sandbox refusals must be accompanied by written reasoning, creating accountability and precedent.",
+    "actors": [
+      "national"
+    ],
+    "evidence": [
+      "Absence of regulatory sandboxes constrains experimentation and iteration — startups cannot test AI in regulated sectors without lengthy approval processes.",
+      "The India AI Governance Guidelines 2025 initiate sandbox frameworks, but formal cross-sector experimentation frameworks with defined timelines have not yet been operationalised."
+    ],
+    "implications": [
+      "Adoption slows in high-value sectors — enterprises and regulated industries delay AI deployment due to liability and compliance ambiguity.",
+      "Capital becomes risk-averse — investors price in regulatory uncertainty, increasing cost of capital and reducing deep-tech exposure."
+    ]
+  },
+  {
+    "id": "p-3",
+    "domain": "policy",
+    "tier": "now",
+    "horizon": "0–3 years",
+    "title": "Operationalise AI Governance Guidelines",
+    "desc": "Translate the 2025 India AI Governance Guidelines from principles into enforceable, sector-specific standards — starting with health, finance, and public services. Each sector needs explicit liability allocation, data governance rules, and mandatory audit frameworks.",
+    "actors": [
+      "national"
+    ],
+    "evidence": [
+      "India AI Governance Guidelines 2025 initiate sectoral standard-setting, legal reform pathways and regulatory sandbox frameworks — but remain high-level principles without enforceable sector-specific standards.",
+      "Accountability gaps: weak AI standards and benchmarks make it hard for high-quality innovation to compete with low-fidelity wrapper products."
+    ],
+    "implications": [
+      "Market quality deteriorates — weak standards allow low-fidelity products to compete, crowding out credible innovators.",
+      "Global competitiveness weakens — Indian AI systems struggle to meet international compliance benchmarks."
+    ]
+  },
+  {
+    "id": "p-4",
+    "domain": "policy",
+    "tier": "build",
+    "horizon": "3–5 years",
+    "title": "Modernise copyright regime for AI",
+    "desc": "Clarify the legal treatment of AI training data, text-and-data mining, and agentic outputs within the Copyright Act 1957, which currently does not address AI-assisted creation. Develop safe harbour provisions for non-commercial model training on publicly available data.",
+    "actors": [
+      "national"
+    ],
+    "evidence": [
+      "The Copyright Act 1957 does not address AI training or agentic outputs, creating systemic ownership uncertainty.",
+      "Weak enforcement and ambiguous IP treatment of AI-assisted innovation discourage deep-tech, long-horizon R&D investment.",
+      "Startup Runway 2.0 and procurement tenders expose proprietary ideas to larger incumbents — foundational legal reform is needed."
+    ],
+    "implications": [
+      "Foundational innovation declines — ownership ambiguity disincentivises high-cost model training and long-horizon R&D.",
+      "Firms relocate to jurisdictions with clearer AI intellectual property protections."
+    ]
+  },
+  {
+    "id": "p-5",
+    "domain": "policy",
+    "tier": "build",
+    "horizon": "3–5 years",
+    "title": "Accelerated AI patent review",
+    "desc": "Create a fast-track AI patent examination lane within the Indian Patent Office with a maximum 18-month examination timeline for frontier AI technologies. Build dedicated examiner capacity with AI domain expertise.",
+    "actors": [
+      "national"
+    ],
+    "evidence": [
+      "Startup India IPR Support already provides 80% patent fee rebate and government-funded facilitators — but examination timelines remain a bottleneck.",
+      "Patent Rule Reforms 2024 streamlined procedures but have not yet addressed the specific examination backlog for AI-related applications."
+    ],
+    "implications": [
+      "Capital reallocates to safer sectors — investors shift toward capital-light automation over core AI innovation where IP protection is slow.",
+      "Defensibility erodes — replication risk compresses margins and reduces long-term valuation potential."
+    ]
+  },
+  {
+    "id": "p-6",
+    "domain": "policy",
+    "tier": "build",
+    "horizon": "3–7 years",
+    "title": "Proportionate regulatory norms",
+    "desc": "Calibrate compliance requirements based on firm size and systemic risk rather than uniform application. Create three tiers: pre-revenue startups (minimal compliance), growth-stage firms (sector-aligned), and systemically important AI firms (full compliance). DPIIT recognition should automatically unlock Tier 1 status.",
+    "actors": [
+      "national"
+    ],
+    "evidence": [
+      "High compliance burden: government-linked funding and procurement impose disproportionate reporting and regulatory costs on early-stage firms.",
+      "Cost asymmetry widens — uniform compliance burdens disproportionately disadvantage early-stage AI firms versus incumbents."
+    ],
+    "implications": [
+      "Scaling fragmentation increases — cross-sector inconsistencies slow expansion and complicate multi-industry deployments.",
+      "Startups avoid government contracts due to procedural and reporting friction, leaving large potential contracts on the table."
+    ]
+  },
+  {
+    "id": "i-1",
+    "domain": "infra",
+    "tier": "now",
+    "horizon": "0–2 years",
+    "title": "Predictable compute access — publish metrics",
+    "desc": "Publish uptime, queue times, pricing stability and allocation transparency metrics for the IndiaAI Compute Portal. This is a low-cost, high-impact transparency action that removes uncertainty for startups planning compute-intensive workloads.",
+    "actors": [
+      "national"
+    ],
+    "evidence": [
+      "IndiaAI Compute Portal operates over 38,000 GPUs at under ₹100/hour vs. ₹200+ globally — a significant existing advantage. However, startups cite slow rollouts and hardware delivery resulting in project delays.",
+      "Startups shortlisted for government GPU access experienced long wait times — unpredictable allocation discourages planning."
+    ],
+    "implications": [
+      "Strategic dependence deepens — without predictable domestic compute, model-building startups default to foreign hyperscalers for reliability."
+    ]
+  },
+  {
+    "id": "i-2",
+    "domain": "infra",
+    "tier": "now",
+    "horizon": "0–2 years",
+    "title": "Transparent GPU allocation rules",
+    "desc": "Define and publish eligibility criteria, audit conditions, and sovereign workload access protocols for government GPU allocation. The current GPU-for-equity model creates conditions perceived as burdensome by VCs — transparent rules without equity strings for non-foundational-model startups would reduce friction.",
+    "actors": [
+      "national"
+    ],
+    "evidence": [
+      "GPU-for-equity model takes a 2–4% minority stake in companies developing foundational models in exchange for subsidised GPUs — viewed by VCs as complicating further funding rounds.",
+      "Allocation opacity creates uncertainty — startups report inconsistent information about eligibility and timelines."
+    ],
+    "implications": [
+      "Innovation capture shifts outward — high-value model-building startups relocate to ecosystems offering superior compute access without equity conditions."
+    ]
+  },
+  {
+    "id": "i-3",
+    "domain": "infra",
+    "tier": "build",
+    "horizon": "3–7 years",
+    "title": "Dedicated AI energy corridors",
+    "desc": "Establish priority energy access zones for AI and data-centre parks, co-located with renewable energy sources. Align with National Electricity Plan 2023-2032 targets for 458 GW peak demand by 2032.",
+    "actors": [
+      "national"
+    ],
+    "evidence": [
+      "Data centre capacity remains insufficient — India has 190 data centres vs. 54,000 in the US, 23,000 in EU/UK, and 449 in China.",
+      "A 1MW data centre consumes 68,500 litres of water daily and electricity equivalent to 3,250 Indian households annually — concentrated in metros already facing water stress."
+    ],
+    "implications": [
+      "Cost competitiveness erodes — rising power, cooling and reliability constraints weaken India's position as a preferred AI development location.",
+      "Environmental and grid pressures intensify — concentrated energy and water demands create localised stress without proportional domestic innovation gains."
+    ]
+  },
+  {
+    "id": "i-4",
+    "domain": "infra",
+    "tier": "monitor",
+    "horizon": "5–10 years",
+    "title": "India Semiconductor Mission (ISM) 2.0",
+    "desc": "Ensure long-term coherence between Make In India, the IndiaAI Mission and ISM's domestic chip fabrication, packaging, memory and advanced server manufacturing ecosystem. This is a 10–15 year industrial policy commitment — not a near-term AI startup intervention.",
+    "actors": [
+      "national"
+    ],
+    "evidence": [
+      "Global governments are committing unprecedented capital to AI infrastructure: Canada C$2.4B, China $47.5B semiconductor fund, France €109B, Saudi Arabia's $100B Project Transcendence. India's IndiaAI GPU spend of ₹103.71B ($1.14B) over 5 years is substantially smaller.",
+      "A single H100 80GB GPU costs ₹25–35 lakhs as of August 2025, with renting at ₹200–250/hour — structural affordability constraints driven by global supply chains India cannot resolve independently."
+    ],
+    "implications": [
+      "Strategic dependence deepens — continued reliance on foreign hyperscalers concentrates control of compute infrastructure and frontier models outside India.",
+      "Sovereignty and resilience risks increase — external geopolitical exposure and cross-border infrastructure dependence constrain strategic autonomy."
+    ]
+  },
+  {
+    "id": "i-5",
+    "domain": "infra",
+    "tier": "monitor",
+    "horizon": "5–10 years",
+    "title": "National AI hardware roadmap",
+    "desc": "Develop a phased domestic capacity roadmap across AI accelerators, edge-AI chips and high-performance computing systems. Monitor global semiconductor supply trends and adjust domestic investment pacing accordingly — avoid premature large bets on chip architectures that may become obsolete.",
+    "actors": [
+      "national"
+    ],
+    "evidence": [
+      "Increasing GPU demand globally combined with shortages of high-bandwidth memory chips and storage are expected to substantially increase GPU costs domestically.",
+      "Infrastructure constitutes the largest share of AI development costs — AI accelerator chips accounting for 47–67% of total expenditure (Epoch AI/Stanford 2025)."
+    ],
+    "implications": [
+      "Without a coherent hardware roadmap, India risks strategic dependence deepening as foreign hyperscalers control compute infrastructure and frontier models."
+    ]
+  },
+  {
+    "id": "i-6",
+    "domain": "infra",
+    "tier": "monitor",
+    "horizon": "3–7 years",
+    "title": "Operationalise the SHANTI Bill 2025",
+    "desc": "Enable regulated private participation and fast-tracking of Small Modular Reactors (SMRs) for data centres, under oversight of the Atomic Energy Regulatory Board. This is a regulatory framework question, not a near-term startup policy — track progress against the 2025 timeline.",
+    "actors": [
+      "national"
+    ],
+    "evidence": [
+      "AI and data centres are among the most energy-intensive sectors. The National Electricity Plan 2023-2032 targets grid expansion to 458 GW peak demand by 2032.",
+      "Budget 2026-27 has proposed a tax holiday till 2047 for foreign cloud providers using Indian data centres to serve global customers — creating investment signals that require matching energy infrastructure."
+    ],
+    "implications": [
+      "Environmental and grid pressures intensify — without SMR and renewable energy solutions, data centre expansion will strain India's grid and water supply."
+    ]
+  },
+  {
+    "id": "i-7",
+    "domain": "infra",
+    "tier": "build",
+    "horizon": "2–5 years",
+    "title": "Strengthen AI Kosh — sectoral data expansion",
+    "desc": "Expand AI Kosh from its current 7,540 datasets to a comprehensive national data commons covering health, agriculture, judicial, and financial sector datasets. Introduce standardised licensing templates and secure data sandboxes for controlled training access.",
+    "actors": [
+      "national",
+      "academia"
+    ],
+    "evidence": [
+      "AI Kosh as of February 2026 has onboarded 7,540 datasets and 273 AI models from 66 entities across 20 sectors — a strong foundation but far below what's needed for India-specific model training.",
+      "Available datasets are often fragmented, poorly labelled, or non-standardised, reducing model performance and generalisability in India's diverse contexts.",
+      "Anecdotal evidence from founders highlights multi-month delays in procuring India-specific datasets."
+    ],
+    "implications": [
+      "Model quality and reliability suffer — fragmented, poorly standardised datasets reduce robustness of India-trained AI systems.",
+      "India-specific differentiation weakens — limited high-quality domestic datasets constrain development of linguistically and culturally relevant AI exports."
+    ]
+  }
+]
