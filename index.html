@@ -209,6 +209,29 @@ a{color:inherit}
 .tl-divider-label{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--fn);white-space:nowrap;padding:2px var(--s3);background:#fff;border:1px solid var(--div);border-radius:var(--rfull)}
 
 
+/* ── TAG ROW in modal header ── */
+.modal-tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:var(--s2)}
+
+/* ── MODAL sections (references, implications inline) ── */
+.modal-section{margin-top:var(--s5)}
+.modal-section-title{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--fn);margin-bottom:var(--s3);padding-bottom:var(--s2);border-bottom:1px solid var(--div)}
+.impi{font-size:var(--xs);color:var(--tx);line-height:1.65;padding:var(--s3) var(--s4);background:var(--nbg);border-radius:var(--rmd);margin-bottom:var(--s3);border-left:3px solid var(--now)}
+
+/* ── CONTRIBUTE MODAL ── */
+.modal-ov.contrib-ov{z-index:300}
+.contrib-hd{padding:var(--s5) var(--s6);border-bottom:1px solid var(--div);display:flex;align-items:center;gap:var(--s4);flex-shrink:0}
+.contrib-body{padding:var(--s5) var(--s6);overflow-y:auto;flex:1;-webkit-overflow-scrolling:touch}
+.contrib-body h4{font-size:var(--sm);font-weight:700;margin-bottom:var(--s2);margin-top:var(--s4);color:var(--tx)}
+.contrib-body h4:first-child{margin-top:0}
+.contrib-body p{font-size:var(--xs);color:var(--mu);line-height:1.7;margin-bottom:var(--s3)}
+.contrib-form label{display:block;font-size:var(--xs);font-weight:600;color:var(--tx);margin-bottom:4px;margin-top:var(--s3)}
+.contrib-form input,.contrib-form select,.contrib-form textarea{width:100%;font:inherit;font-size:var(--xs);padding:var(--s2) var(--s3);border:1px solid var(--brd);border-radius:var(--rmd);background:#fff;color:var(--tx);line-height:1.5;outline:none;transition:border-color var(--ease)}
+.contrib-form input:focus,.contrib-form select:focus,.contrib-form textarea:focus{border-color:var(--pri)}
+.contrib-form textarea{resize:vertical;min-height:90px}
+.contrib-submit{margin-top:var(--s5);width:100%;padding:var(--s3) var(--s4);background:var(--pri);color:#fff;border-radius:var(--rmd);font-size:var(--xs);font-weight:700;transition:opacity var(--ease)}
+.contrib-submit:hover{opacity:.85}
+.contrib-note{font-size:10px;color:var(--fn);margin-top:var(--s2);line-height:1.5}
+
 /* ── ABOUT MODAL ── */
 .modal-ov.about-ov{z-index:300}
 .about-hd{padding:var(--s5) var(--s6);border-bottom:1px solid var(--div);display:flex;align-items:center;gap:var(--s4);flex-shrink:0}
@@ -268,6 +291,7 @@ a{color:inherit}
       <button class="hnav-link" id="nav-journey">Journey</button>
     </nav>
     <div class="header-spacer"></div>
+    <button class="hnav-link" id="contribute-btn" style="flex-shrink:0">Contribute</button>
     <button class="hnav-link" id="about-btn" style="flex-shrink:0">About</button>
     <a class="logo-link" href="https://artha.global" target="_blank" rel="noopener noreferrer" aria-label="Artha Global website">
       <img src="./Artha-Logo_without-outline-1.jpg" alt="Artha Global" height="28"
@@ -341,7 +365,7 @@ a{color:inherit}
   <div class="view" id="view-journey">
     <div class="journey-intro">
       <h2>India's AI Policy Journey</h2>
-      <p>A pillar-by-pillar timeline showing what has already been done and what needs to happen next. Past efforts are drawn from Artha Global's April 2026 study; forward recommendations are prioritised by urgency and domestic control.</p>
+      <p>A timeline of key efforts, milestones and forward facing actions to scale AI innovation in India.</p>
       <div class="journey-legend">
         <div class="j-leg"><div class="j-leg-dot" style="background:var(--pw-tx)"></div><span>Past Efforts</span></div>
         <div class="j-leg"><div class="j-leg-dot" style="background:var(--now)"></div><span>Act Now</span></div>
@@ -363,30 +387,17 @@ a{color:inherit}
   <div class="modal">
     <div class="modal-hd">
       <div class="modal-hdi">
-        <div id="d-badge"></div>
+        <div class="modal-tags" id="d-tags"></div>
         <div class="modal-title" id="d-title"></div>
       </div>
       <button class="modal-cls" id="d-cls" aria-label="Close">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6 6 18M6 6l12 12"/></svg>
       </button>
     </div>
-    <div class="dtabs">
-      <button class="dtab on" data-pane="overview">Overview</button>
-      <button class="dtab" data-pane="evidence">Evidence</button>
-      <button class="dtab" data-pane="implications">If not acted</button>
-    </div>
     <div class="modal-body">
-      <div class="drwpane on" id="pane-overview">
-        <p class="drwdesc" id="d-desc"></p>
-        <div class="drwmeta" id="d-meta"></div>
-      </div>
-      <div class="drwpane" id="pane-evidence">
-        <div id="d-ev"></div>
-        <div class="ev-ref" id="d-refs"></div>
-      </div>
-      <div class="drwpane" id="pane-implications">
-        <div id="d-impl"></div>
-      </div>
+      <p class="drwdesc" id="d-desc"></p>
+      <div id="d-refs-section"></div>
+      <div id="d-impl-section"></div>
     </div>
   </div>
 </div>
@@ -422,6 +433,61 @@ a{color:inherit}
       </ul>
       <h4>Source</h4>
       <p>Artha Global, <em>Scaling AI Startups in India</em>, April 2026. <a href="https://artha.global" target="_blank" rel="noopener noreferrer" style="color:var(--pri)">artha.global</a></p>
+    </div>
+  </div>
+</div>
+
+<!-- Contribute Modal -->
+<div class="modal-ov contrib-ov" id="contrib-ov" role="dialog" aria-modal="true">
+  <div class="modal">
+    <div class="contrib-hd">
+      <div style="flex:1;font-size:var(--base);font-weight:700">Contribute</div>
+      <button class="modal-cls" id="contrib-cls" aria-label="Close">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6 6 18M6 6l12 12"/></svg>
+      </button>
+    </div>
+    <div class="contrib-body">
+      <h4>Help improve this resource</h4>
+      <p>Have a past effort we've missed, a more recent data point, or a new recommendation to suggest? Share it here and the Artha Global team will review and incorporate relevant additions.</p>
+      <form class="contrib-form" id="contrib-form" onsubmit="submitContrib(event)">
+        <label for="cf-name">Your name (optional)</label>
+        <input type="text" id="cf-name" placeholder="e.g. Priya Sharma">
+
+        <label for="cf-org">Organisation (optional)</label>
+        <input type="text" id="cf-org" placeholder="e.g. NASSCOM, IIT Delhi, MeitY">
+
+        <label for="cf-type">Type of contribution</label>
+        <select id="cf-type">
+          <option value="">— select —</option>
+          <option value="past_work">Past effort or initiative we've missed</option>
+          <option value="recommendation">New recommendation or policy action</option>
+          <option value="correction">Correction to existing content</option>
+          <option value="reference">New reference or citation</option>
+          <option value="other">Other feedback</option>
+        </select>
+
+        <label for="cf-domain">Domain</label>
+        <select id="cf-domain">
+          <option value="">— select —</option>
+          <option value="talent">Talent &amp; R&amp;D</option>
+          <option value="market">Market Innovation</option>
+          <option value="financing">Financing</option>
+          <option value="policy">Policy &amp; Regulation</option>
+          <option value="infra">Physical &amp; Digital Infra</option>
+        </select>
+
+        <label for="cf-title">Title / name of item</label>
+        <input type="text" id="cf-title" placeholder="e.g. SEBI AI Regulatory Sandbox 2025" required>
+
+        <label for="cf-desc">Description</label>
+        <textarea id="cf-desc" placeholder="Brief description of what it is, why it matters, and any supporting links..." required></textarea>
+
+        <label for="cf-ref">Source or reference URL (optional)</label>
+        <input type="url" id="cf-ref" placeholder="https://...">
+
+        <button type="submit" class="contrib-submit">Submit contribution</button>
+        <p class="contrib-note">Submissions are reviewed by the Artha Global team. We may reach out for more detail before publishing.</p>
+      </form>
     </div>
   </div>
 </div>
@@ -649,50 +715,43 @@ function openModal(id) {
   if (!r) return;
   const dm = DM[r.domain];
 
-  document.getElementById('d-badge').innerHTML = badge(r);
+  // Build tag row: tier badge + domain tag + type tag + actor tags
+  const tierBadge = badge(r);
+  const domainTag = `<span class="dtag ${dm.cls}" style="font-size:10px;padding:2px 7px">${dm.label}</span>`;
+  const typeTag = `<span class="dtag" style="font-size:10px;padding:2px 7px;background:var(--off);border:1px solid var(--brd);color:var(--mu)">${r.content_type==='past_work'?'Past Efforts':'Recommendation'}</span>`;
+  const actorTags = r.actors.map(a=>`<span class="atag" style="font-size:10px">${AM[a]||a}</span>`).join('');
+  document.getElementById('d-tags').innerHTML = tierBadge + domainTag + typeTag + actorTags;
+
   document.getElementById('d-title').textContent = r.title;
   document.getElementById('d-desc').textContent = r.desc;
-  document.getElementById('d-meta').innerHTML = `
-    <div class="mi"><div class="mil">Domain</div><div class="miv" style="color:${dm.color}">${dm.label}</div></div>
-    <div class="mi"><div class="mil">Type</div><div class="miv">${r.content_type==='past_work'?'Past Efforts':'Recommendation'}</div></div>
-    <div class="mi"><div class="mil">Priority</div><div class="miv">${TL[r.tier]||r.tier}</div></div>
-    <div class="mi"><div class="mil">Horizon / Date</div><div class="miv">${r.date_label||r.horizon||'—'}</div></div>
-    <div class="mi"><div class="mil">Responsibility</div><div class="miv">${r.actors.map(a=>AM[a]||a).join(', ')}</div></div>`;
 
-  const evHtml = (r.evidence||[]).map(e =>
+  // References section (previously Evidence tab)
+  const evItems = (r.evidence||[]).map(e =>
     `<div class="evi">${e}<div class="evsrc">Artha Global study, Apr 2026</div></div>`
-  ).join('') || '<p style="color:var(--fn);font-size:var(--xs)">No evidence data attached.</p>';
-
+  ).join('');
   const refs = r.references||[];
-  const refsHtml = refs.length ? `<div class="ev-ref">
+  const refsLinks = refs.length ? `<div class="ev-ref" style="margin-top:var(--s3)">
     <div class="ev-ref-title">External references</div>
     ${refs.map(ref=>`<a href="${ref.url}" target="_blank" rel="noopener noreferrer">
       <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
       ${ref.label}</a>`).join('')}
   </div>` : '';
+  const hasRefs = evItems || refsLinks;
+  document.getElementById('d-refs-section').innerHTML = hasRefs
+    ? `<div class="modal-section"><div class="modal-section-title">References</div>${evItems}${refsLinks}</div>` : '';
 
-  document.getElementById('d-ev').innerHTML = evHtml;
-  document.getElementById('d-refs').innerHTML = refsHtml;
-  document.getElementById('d-impl').innerHTML = (r.implications||[]).length
+  // Why important section (previously If not acted tab)
+  const implHtml = (r.implications||[]).length
     ? (r.implications||[]).map(i=>`<div class="impi">${i}</div>`).join('')
-    : '<p style="color:var(--fn);font-size:var(--xs)">No implications listed.</p>';
+    : '';
+  document.getElementById('d-impl-section').innerHTML = implHtml
+    ? `<div class="modal-section"><div class="modal-section-title">Why is this important?</div>${implHtml}</div>` : '';
 
-  document.querySelectorAll('.dtab').forEach(t=>t.classList.remove('on'));
-  document.querySelectorAll('.drwpane').forEach(p=>p.classList.remove('on'));
-  document.querySelector('.dtab[data-pane="overview"]').classList.add('on');
-  document.getElementById('pane-overview').classList.add('on');
   document.getElementById('modal-ov').classList.add('open');
   document.body.style.overflow='hidden';
 }
 function closeModal(){document.getElementById('modal-ov').classList.remove('open');document.body.style.overflow='';}
 
-document.querySelectorAll('.dtab').forEach(t=>t.addEventListener('click',()=>{
-  const p=t.dataset.pane;
-  document.querySelectorAll('.dtab').forEach(x=>x.classList.remove('on'));
-  document.querySelectorAll('.drwpane').forEach(x=>x.classList.remove('on'));
-  t.classList.add('on');
-  document.getElementById('pane-'+p).classList.add('on');
-}));
 document.getElementById('d-cls').addEventListener('click',closeModal);
 document.getElementById('modal-ov').addEventListener('click',e=>{if(e.target===document.getElementById('modal-ov'))closeModal();});
 
@@ -703,9 +762,35 @@ document.getElementById('about-btn').addEventListener('click',openAbout);
 document.getElementById('about-cls').addEventListener('click',closeAbout);
 document.getElementById('about-ov').addEventListener('click',e=>{if(e.target===document.getElementById('about-ov'))closeAbout();});
 
+// Contribute
+function openContrib(){document.getElementById('contrib-ov').classList.add('open');document.body.style.overflow='hidden';}
+function closeContrib(){document.getElementById('contrib-ov').classList.remove('open');document.body.style.overflow='';}
+document.getElementById('contribute-btn').addEventListener('click',openContrib);
+document.getElementById('contrib-cls').addEventListener('click',closeContrib);
+document.getElementById('contrib-ov').addEventListener('click',e=>{if(e.target===document.getElementById('contrib-ov'))closeContrib();});
+function submitContrib(e){
+  e.preventDefault();
+  const form = document.getElementById('contrib-form');
+  const data = {
+    name: document.getElementById('cf-name').value,
+    org: document.getElementById('cf-org').value,
+    type: document.getElementById('cf-type').value,
+    domain: document.getElementById('cf-domain').value,
+    title: document.getElementById('cf-title').value,
+    desc: document.getElementById('cf-desc').value,
+    ref: document.getElementById('cf-ref').value,
+    ts: new Date().toISOString()
+  };
+  // Copy to clipboard as JSON for now (no backend)
+  const txt = JSON.stringify(data, null, 2);
+  navigator.clipboard.writeText(txt).catch(()=>{});
+  form.innerHTML = '<div style="text-align:center;padding:var(--s8) var(--s4)"><div style="font-size:2rem;margin-bottom:var(--s3)">✓</div><div style="font-weight:700;margin-bottom:var(--s2)">Thank you!</div><p style="font-size:var(--xs);color:var(--mu)">Your contribution has been noted. The Artha Global team will review it.</p></div>';
+}
+
 document.addEventListener('keydown',e=>{
   if(e.key==='Escape'){
-    if(document.getElementById('about-ov').classList.contains('open'))closeAbout();
+    if(document.getElementById('contrib-ov').classList.contains('open'))closeContrib();
+    else if(document.getElementById('about-ov').classList.contains('open'))closeAbout();
     else closeModal();
   }
 });
