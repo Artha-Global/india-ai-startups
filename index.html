@@ -694,8 +694,6 @@ document.getElementById('about-btn').addEventListener('click',openAbout);
 document.getElementById('about-cls').addEventListener('click',closeAbout);
 document.getElementById('about-ov').addEventListener('click',e=>{if(e.target===document.getElementById('about-ov'))closeAbout();});
 
-);
-
 // ── FILTERS ──
 function reset(){AF={horizon:[],domain:[],actor:[]};document.querySelectorAll('.fp').forEach(p=>p.classList.remove('on'));render();}
 document.getElementById('rst').addEventListener('click',reset);
