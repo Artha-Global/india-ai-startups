@@ -467,12 +467,18 @@ function tryLoad() {
 tryLoad();
 
 // ── HELPERS ──
-function badge(r) {
+function contentBadge(r) {
+  return r.content_type === 'past_work'
+    ? '<span class="tb bpw">PAST EFFORTS</span>'
+    : '<span class="tb" style="background:var(--off);color:var(--mu);border:1px solid var(--brd)">RECOMMENDATION</span>';
+}
+function horizonBadge(r) {
   if (r.content_type === 'past_work') return '<span class="tb bpw">PAST EFFORTS</span>';
   if (r.tier === 'now')     return '<span class="tb bn">ACT NOW</span>';
   if (r.tier === 'build')   return '<span class="tb bb">BUILD TOWARD</span>';
   return '<span class="tb bm">MONITOR</span>';
 }
+function badge(r) { return horizonBadge(r); }
 
 function horizonKey(r) {
   // Map each item to a single horizon bucket for filtering
@@ -511,7 +517,7 @@ function render() {
       const isPast = r.content_type === 'past_work';
 
       h += `<div class="card${isPast?' is-past':''}" data-id="${r.id}" tabindex="0" role="button" aria-label="${r.title}">
-        <div class="card-pills">${badge(r)}</div>
+        <div class="card-pills">${contentBadge(r)}${horizonBadge(r)}</div>
         <div class="ctitle">${r.title}</div>
         <div class="cbody">${sd}</div>
         <div class="cfoot">${acts}</div>
@@ -648,11 +654,10 @@ function openModal(id) {
   const dm = DM[r.domain];
 
   // Build tag row: tier badge + domain tag + type tag + actor tags
-  const tierBadge = badge(r);
+  const tierBadge = horizonBadge(r);
   const domainTag = `<span class="dtag ${dm.cls}" style="font-size:10px;padding:2px 7px">${dm.label}</span>`;
-  const typeTag = `<span class="dtag" style="font-size:10px;padding:2px 7px;background:var(--off);border:1px solid var(--brd);color:var(--mu)">${r.content_type==='past_work'?'Past Efforts':'Recommendation'}</span>`;
   const actorTags = r.actors.map(a=>`<span class="atag" style="font-size:10px">${AM[a]||a}</span>`).join('');
-  document.getElementById('d-tags').innerHTML = tierBadge + domainTag + typeTag + actorTags;
+  document.getElementById('d-tags').innerHTML = tierBadge + domainTag + actorTags;
 
   document.getElementById('d-title').textContent = r.title;
   document.getElementById('d-desc').textContent = r.desc;
