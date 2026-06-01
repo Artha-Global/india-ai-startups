@@ -467,11 +467,6 @@ function tryLoad() {
 tryLoad();
 
 // ── HELPERS ──
-function contentBadge(r) {
-  return r.content_type === 'past_work'
-    ? '<span class="tb bpw">PAST EFFORTS</span>'
-    : '<span class="tb" style="background:var(--off);color:var(--mu);border:1px solid var(--brd)">RECOMMENDATION</span>';
-}
 function horizonBadge(r) {
   if (r.content_type === 'past_work') return '<span class="tb bpw">PAST EFFORTS</span>';
   if (r.tier === 'now')     return '<span class="tb bn">ACT NOW</span>';
@@ -517,7 +512,7 @@ function render() {
       const isPast = r.content_type === 'past_work';
 
       h += `<div class="card${isPast?' is-past':''}" data-id="${r.id}" tabindex="0" role="button" aria-label="${r.title}">
-        <div class="card-pills">${contentBadge(r)}${horizonBadge(r)}</div>
+        <div class="card-pills">${horizonBadge(r)}${r.date_label ? `<span class="date-tag">${r.date_label}</span>` : ''}</div>
         <div class="ctitle">${r.title}</div>
         <div class="cbody">${sd}</div>
         <div class="cfoot">${acts}</div>
