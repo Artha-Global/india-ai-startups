@@ -392,39 +392,106 @@ a{color:inherit}
 <div class="modal-ov about-ov" id="about-ov" role="dialog" aria-modal="true">
   <div class="modal">
     <div class="about-hd">
-      <div style="flex:1;font-size:var(--base);font-weight:700">About this Explorer</div>
+      <div style="flex:1;font-size:var(--base);font-weight:700">
+        About this Explorer
+      </div>
       <button class="modal-cls" id="about-cls" aria-label="Close">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6 6 18M6 6l12 12"/></svg>
+        <svg
+          width="16"
+          height="16"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2.5"
+        >
+          <path d="M18 6 6 18M6 6l12 12" />
+        </svg>
       </button>
     </div>
+
     <div class="about-body">
       <h4>What is this?</h4>
-      <p>A static web app for exploring Artha Global's April 2026 study on scaling AI startups in India. It tracks both <strong>past government and ecosystem work</strong> already completed, and <strong>forward-looking recommendations</strong> prioritised by urgency and domestic control.</p>
+      <p>
+        A static web app for exploring Artha Global's April 2026 study on
+        scaling AI startups in India. It tracks both
+        <strong>past government and ecosystem work</strong> already completed,
+        and <strong>forward-looking recommendations</strong> prioritised by
+        urgency and domestic control.
+      </p>
+
       <h4>Content types</h4>
       <ul>
-        <li><strong>Past Efforts</strong> — government programmes, policies, and initiatives already launched (with links to sources).</li>
-        <li><strong>Act Now</strong> — high domestic control, 0–3 year horizon. India has full policy agency.</li>
-        <li><strong>Build Toward</strong> — structural reform needed, 3–7 year horizon.</li>
-        <li><strong>Monitor</strong> — low domestic leverage; watch global trends.</li>
+        <li>
+          <strong>Past Efforts</strong> — government programmes, policies, and
+          initiatives already launched (with links to sources).
+        </li>
+        <li>
+          <strong>Act Now</strong> — high domestic control, 0–3 year horizon.
+          India has full policy agency.
+        </li>
+        <li>
+          <strong>Build Toward</strong> — structural reform needed, 3–7 year
+          horizon.
+        </li>
+        <li>
+          <strong>Monitor</strong> — low domestic leverage; watch global
+          trends.
+        </li>
       </ul>
-      <h4>How to update content</h4>
-      <p>Open <code>recommendations.json</code> in any text editor or ask an LLM to edit it. Each entry has a <code>content_type</code> field (<code>past_work</code> or <code>recommendation</code>), a <code>date_label</code>, and a <code>references</code> array for external links. No build step needed.</p>
-      <h4>Domains</h4>
-      <ul>
-        <li><code>talent</code> — Talent &amp; R&amp;D</li>
-        <li><code>market</code> — Market Innovation</li>
-        <li><code>financing</code> — Financing</li>
-        <li><code>policy</code> — Policy &amp; Regulation</li>
-        <li><code>infra</code> — Physical &amp; Digital Infra</li>
-      </ul>
-      <h4>Source</h4>
-      <p>Artha Global, <em>Scaling AI Startups in India</em>, April 2026. <a href="https://artha.global" target="_blank" rel="noopener noreferrer" style="color:var(--pri)">artha.global</a></p>
+
+      <hr>
+
+      <p><strong>About Artha Global</strong></p>
+
+      <p>
+        Artha Global is a globally networked policy consulting organisation that
+        partners with governments, multilateral agencies, philanthropies, and
+        the private sector to address systemic challenges that hinder people’s
+        aspirations for shared prosperity and opportunity.
+      </p>
+
+      <p>
+        Over the next few decades, the developing world will negotiate important
+        transitions, as societies and the economy move from rural to urban, farm
+        to factory, informal to formal, brown to green, and analogue to
+        digital. We help leaders manage these transitions and the inevitable
+        dislocations they cause, in order to secure long-term prosperity and
+        social stability for each individual. Key to our vision is the national
+        pursuit of sustained economic growth.
+      </p>
+
+      <p>
+        Artha Global was founded by the leadership team of IDFC Institute, a
+        Mumbai-based think/do tank with over a decade’s experience working with
+        the Union, state and local governments in India.
+      </p>
+
+      <p>
+        Visit us at
+        <a
+          href="https://artha.global"
+          target="_blank"
+          rel="noopener noreferrer"
+          style="color:var(--pri)"
+        >
+          artha.global
+        </a>.
+      </p>
+
+      <p><strong>Authors</strong></p>
+
+      <p>
+        <em>
+          Sridhar Ganapathy, Priya Vedavalli, Sharmadha Srinivasan, Dhruva
+          Vorkady, Ashi Parelkar, Keith Fernandes
+        </em>
+      </p>
     </div>
   </div>
 </div>
 
 <div class="toast" id="toast"></div>
-
+  
 <script>
 // ── DATA LAYER ──
 const DM = {
