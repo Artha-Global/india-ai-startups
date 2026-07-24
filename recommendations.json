@@ -1084,5 +1084,32 @@
         "url": "https://indiaai.gov.in/ "
       }
     ]
+  },
+    {
+    "id": "t-5",
+    "domain": "talent",
+    "tier": "build",
+    "horizon": "3–7 years",
+    "title": "Targeted AI R&D tax credits",
+    "desc": "Extend research incentives to AI-intensive sectors including semiconductors, climate-tech, and defence-tech. Design credits to explicitly reward foundational research activity (compute spend on pre-training, researcher salaries, benchmark development) not just product commercialisation.",
+    "actors": [
+      "national",
+      "ecosystem"
+    ],
+    "evidence": [
+      "India's current R&D expenditure of 0.6–0.7% of GDP is far below global innovation leaders (China 2.4%, USA 3.5%, Israel 5.4%)",
+      "Existing funding mechanisms favour incremental or copycat innovation over foundational research. Artha Global study, Apr 2026"
+    ],
+    "implications": [
+      "Weak deep-tech investability — investors avoid long-horizon AI ventures lacking defensible intellectual property if no public co-investment signals exist."
+    ],
+    "content_type": "recommendation",
+    "date_label": 2025,
+    "references": [
+      {
+        "label": "Research, Development and Innovation (RDI) scheme",
+        "url": "https://csdronline.com/blind-spot/funding-innovation-assessing-indias-new-rdi-scheme"
+      }
+    ]
   }
 ]
