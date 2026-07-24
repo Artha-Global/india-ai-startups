@@ -593,34 +593,6 @@
     ]
   },
   {
-    "id": "m-5",
-    "domain": "market",
-    "tier": "past_work",
-    "horizon": "0–3 years",
-    "title": "Support for India-specific foundation models",
-    "desc": "Create targeted grants and compute subsidies for startups developing language- and sector-trained foundational models suited to India's demographic and regulatory context — 22+ official languages, public service workflows, and code-mixed digital usage.",
-    "actors": [
-      "national",
-      "ecosystem"
-    ],
-    "evidence": [
-      "AI Kosh (IndiaAI Mission) has onboarded 7,540 datasets and 273 AI models from 66 entities across 20 sectors as of February 2026, yet the ecosystem remains dominated by foreign foundational models.",
-      "Global AI innovation remains highly concentrated, with nearly three-quarters of venture funding going to the US — leaving India-specific model development chronically underfunded."
-    ],
-    "implications": [
-      "Indian firms remain dependent on foreign foundational models not trained on India-relevant data, weakening domestic innovation differentiation.",
-      "Missed scale-feedback advantage — without population-scale deployment of Indian models, local systems fail to benefit from real-world learning loops."
-    ],
-    "content_type": "recommendation",
-    "date_label": null,
-    "references": [
-      {
-        "label": "India AI Mission",
-        "url": "https://indiaai.gov.in/"
-      }
-    ]
-  },
-  {
     "id": "m-6",
     "domain": "market",
     "tier": "now",
@@ -645,6 +617,34 @@
       {
         "label": "Government e-Marketplace",
         "url": "https://gem.gov.in/ "
+      }
+    ]
+  },
+  {
+    "id": "m-5",
+    "domain": "market",
+    "tier": "past_work",
+    "horizon": "0–3 years",
+    "title": "Support for India-specific foundation models",
+    "desc": "Create targeted grants and compute subsidies for startups developing language- and sector-trained foundational models suited to India's demographic and regulatory context — 22+ official languages, public service workflows, and code-mixed digital usage.",
+    "actors": [
+      "national",
+      "ecosystem"
+    ],
+    "evidence": [
+      "AI Kosh (IndiaAI Mission) has onboarded 7,540 datasets and 273 AI models from 66 entities across 20 sectors as of February 2026, yet the ecosystem remains dominated by foreign foundational models.",
+      "Global AI innovation remains highly concentrated, with nearly three-quarters of venture funding going to the US — leaving India-specific model development chronically underfunded."
+    ],
+    "implications": [
+      "Indian firms remain dependent on foreign foundational models not trained on India-relevant data, weakening domestic innovation differentiation.",
+      "Missed scale-feedback advantage — without population-scale deployment of Indian models, local systems fail to benefit from real-world learning loops."
+    ],
+    "content_type": "recommendation",
+    "date_label": null,
+    "references": [
+      {
+        "label": "India AI Mission",
+        "url": "https://indiaai.gov.in/"
       }
     ]
   },
