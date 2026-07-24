@@ -593,6 +593,33 @@
     ]
   },
   {
+    "id": "m-4",
+    "domain": "market",
+    "tier": "monitor",
+    "horizon": "0–2 years",
+    "title": "National AI hardware roadmap",
+    "desc": "Develop a phased domestic capacity roadmap across AI accelerators, edge-AI chips and high-performance computing systems. Monitor global semiconductor supply trends and adjust domestic investment pacing accordingly — avoid premature large bets on chip architectures that may become obsolete.",
+    "actors": [
+      "national",
+      "ecosystem"
+    ],
+    "evidence": [
+      "Increasing GPU demand globally combined with shortages of high-bandwidth memory chips and storage are expected to substantially increase GPU costs domestically.",
+      " Infrastructure constitutes the largest share of AI development costs — AI accelerator chips accounting for 47–67% of total expenditure Epoch AI/Stanford 2025, cited in Artha Global study, Apr 2026"
+    ],
+    "implications": [
+      "Without a coherent hardware roadmap, India risks strategic dependence deepening as foreign hyperscalers control compute infrastructure and frontier models."
+    ],
+    "content_type": "recommendation",
+    "date_label": 2025,
+    "references": [
+      {
+        "label": "Democratising AI infrastructure Whitepaper",
+        "url": "https://psa.gov.in/CMS/web/sites/default/files/publication/WP_Democratising%20Access_V3.0_29122025A.pdf"
+      }
+    ]
+  },
+  {
     "id": "m-6",
     "domain": "market",
     "tier": "now",
