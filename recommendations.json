@@ -650,7 +650,7 @@
   {
     "id": "m-5",
     "domain": "market",
-    "tier": "past_work",
+    "tier": "monitor",
     "horizon": "0–3 years",
     "title": "Support for India-specific foundation models",
     "desc": "Create targeted grants and compute subsidies for startups developing language- and sector-trained foundational models suited to India's demographic and regulatory context — 22+ official languages, public service workflows, and code-mixed digital usage.",
