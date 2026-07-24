@@ -2,7 +2,6 @@
   {
     "id": "pw-i-1",
     "domain": "infra",
-    "tier": "now",
     "content_type": "past_work",
     "date_label": "2024",
     "title": "IndiaAI Mission launched — 10,372 Cr compute & data mandate",
@@ -25,7 +24,6 @@
   {
     "id": "pw-i-3",
     "domain": "infra",
-    "tier": "now",
     "content_type": "past_work",
     "date_label": "2026",
     "title": "Budget 2026-27 — Tax holiday for data centres to 2047",
@@ -48,7 +46,6 @@
   {
     "id": "pw-i-4",
     "domain": "infra",
-    "tier": "now",
     "content_type": "past_work",
     "date_label": "2026",
     "title": "AI Kosh — 7,540 datasets across 20 sectors onboarded",
@@ -98,7 +95,6 @@
   {
     "id": "pw-f-1",
     "domain": "financing",
-    "tier": "now",
     "content_type": "past_work",
     "date_label": "2016",
     "title": "SIDBI Fund of Funds (FFS 1.0) — ₹10,000 Cr corpus launched",
@@ -125,7 +121,6 @@
   {
     "id": "pw-f-3",
     "domain": "financing",
-    "tier": "now",
     "content_type": "past_work",
     "date_label": "2025",
     "title": "RDI Scheme — ₹1 Lakh Crore for private sector R&D",
@@ -152,7 +147,6 @@
   {
     "id": "pw-f-4",
     "domain": "financing",
-    "tier": "now",
     "content_type": "past_work",
     "date_label": "2023",
     "title": "IndiaAI Startup Financing — ₹2,000 Cr dedicated AI startup fund",
@@ -207,7 +201,6 @@
   {
     "id": "pw-t-1",
     "domain": "talent",
-    "tier": "now",
     "content_type": "past_work",
     "date_label": "2025",
     "title": "IndiaAI FutureSkills — 1.6M trained via FutureSkills Prime",
@@ -259,7 +252,6 @@
   {
     "id": "pw-m-1",
     "domain": "market",
-    "tier": "now",
     "content_type": "past_work",
     "date_label": "2023",
     "title": "GeM Startup Runway 2.0 — Startups on government procurement",
@@ -283,7 +275,6 @@
   {
     "id": "pw-m-4",
     "domain": "market",
-    "tier": "now",
     "content_type": "past_work",
     "date_label": "2016",
     "title": "Startup India — DPIIT recognition & policy framework",
@@ -306,7 +297,6 @@
   {
     "id": "pw-p-1",
     "domain": "policy",
-    "tier": "now",
     "content_type": "past_work",
     "date_label": "2025",
     "title": "India AI Governance Guidelines 2025",
@@ -333,7 +323,6 @@
   {
     "id": "pw-p-2",
     "domain": "policy",
-    "tier": "now",
     "content_type": "past_work",
     "date_label": "2023",
     "title": "DPDPA 2023 & DPDP Rules 2025 — Digital personal data framework",
