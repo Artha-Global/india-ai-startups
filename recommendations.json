@@ -566,6 +566,33 @@
     ]
   },
   {
+    "id": "m-2",
+    "domain": "market",
+    "tier": "now",
+    "horizon": "0–2 years",
+    "title": "Shift from L1 to value-based government procurement",
+    "desc": "Reform the Lowest Bidder (L1) norm that systematically rewards cost over capability. Replace with multi-criteria evaluation combining lifecycle performance, innovation depth and technological differentiation. Build dedicated AI evaluation units inside at least 5 major ministries.",
+    "actors": [
+      "national"
+    ],
+    "evidence": [
+      "Open tendering and L1 norms prioritise scale over innovation, disadvantaging startups who cannot compete on pure cost. Limited institutional ability to assess AI solutions reinforces reliance on incumbents.",
+      "Startup Runway 2.0 on GeM relaxes experience and turnover requirements — but evaluation methodology remains unchanged. Artha Global study, Apr 2026"
+    ],
+    "implications": [
+      "Government demand remains under-leveraged — the state fails to act as a scale catalyst for domestic AI innovation.",
+      "Incumbent dominance deepens as scale-based procurement norms reinforce established players over innovation-driven firms."
+    ],
+    "content_type": "recommendation",
+    "date_label": null,
+    "references": [
+      {
+        "label": "GeM Portal",
+        "url": "https://gem.gov.in/"
+      }
+    ]
+  },
+  {
     "id": "m-5",
     "domain": "market",
     "tier": "past_work",
