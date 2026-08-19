@@ -564,8 +564,8 @@ function matches(r) {
 function render() {
   const vis = ALL.filter(matches);
   document.getElementById('st-tot').textContent = vis.length;
-  document.getElementById('st-now').textContent = vis.filter(r => r.tier === 'now').length;
-  document.getElementById('st-bld').textContent = vis.filter(r => r.tier === 'build').length;
+  document.getElementById('st-now').textContent = vis.filter(r => r.tier === 'now' && r.content_type === 'recommendation').length;
+  document.getElementById('st-bld').textContent = vis.filter(r => r.tier === 'build' && r.content_type === 'recommendation').length;
   document.getElementById('st-pw').textContent  = vis.filter(r => r.content_type === 'past_work').length;
 
   const c = document.getElementById('recs');
