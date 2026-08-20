@@ -572,6 +572,25 @@ function render() {
   document.getElementById('st-mon').textContent = vis.filter(r => r.tier === 'monitor' && r.content_type === 'recommendation').length;
   document.getElementById('st-pw').textContent  = vis.filter(r => r.content_type === 'past_work').length;
 
+  const counts={
+    'st-tot': vis.length,
+    'st-now': vis.filter(r=>r.tier==='now').length,
+    'st-bld': vis.filter(r=>r.tier==='build').length,
+    'st-mon': vis.filter(r=>r.tier==='monitor').length,
+    'st-pw': vis.filter(r=>r.content_type === 'past_work').length
+  };
+  for(const id in counts){
+    const val=counts[id];
+    const el=document.getElementById(id);
+    const tile=el.closest('.stat');
+    if(id!=='st-tot' && val===0){
+      tile.style.display='none';
+    } else {
+      tile.style.display='';
+      el.textContent=val;
+    }
+  }
+  
   const c = document.getElementById('recs');
   if (!vis.length) {
     c.innerHTML = '<div class="empty"><h3>No items match</h3><p>Try removing some filters.</p><button onclick="reset()">Reset all filters</button></div>';
